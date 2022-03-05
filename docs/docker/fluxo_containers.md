@@ -110,7 +110,7 @@ Volte no terminal e execute:
 docker run ubuntu sleep 5m
 ```
 
-Ele vai congelar o terminal, abra uma nova aba ou terminal e feche esse console que está rodando o comando. Execute o **docker ps** para visualizar o contêiner que está ativo e agora vamos parar esse contêiner que está em execução. Execute agora o [docker stop](https://docs.docker.com/engine/reference/commandline/stop/){:target="_blank"}, mas passe o CONTAINER ID no **seu** terminal.
+Ele vai congelar o terminal, abra uma nova aba ou terminal e execute o **docker ps** para visualizar o contêiner que está ativo e agora vamos parar esse contêiner que está em execução. Execute agora o [docker stop](https://docs.docker.com/engine/reference/commandline/stop/){:target="_blank"}, mas passe o CONTAINER ID no **seu** terminal.
 
 ```bash
 docker stop 19bf7322160d
