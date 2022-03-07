@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.e8d9bf0c.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2d9f7617.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -28,8 +28,9 @@
     
       
         
+        
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -465,6 +466,14 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3">
@@ -562,6 +571,62 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iniciando%20o%20swarm/" class="md-nav__link">
+        Iniciando o Swarm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../servi%C3%A7os/" class="md-nav__link">
+        Serviço
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ingress/" class="md-nav__link">
+        Ingress
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker%20stack/" class="md-nav__link">
+        Docker Stack
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -651,7 +716,7 @@
 <li><strong>Pessoas que tocam a orquestra</strong>: São os computadores, para cada pessoa, imagine um computador</li>
 <li><strong>Instrumentos</strong>: Para cada instrumento, imagine que seja um docker/trabalhador</li>
 <li><strong>Maestro</strong>: Esse é o cara, no docker, chamamos ele de Swarm/gerente, é o responsável por dividir, gerenciar e garantir a estabilidade e tudo isso sem precisar que alguém fique de olho.</li>
-<li><strong>Musica</strong>: Por ultimo a musica, qual nota tocar? quando tocar? atento a cada nota, se houver um erro é resolvido por ele e essa vamos chamar conta ineres, que vão ser controlados pelo gerente.</li>
+<li><strong>Música</strong>: Por último a música, qual nota tocar? Quando tocar? Atento a cada nota, se houver um erro é resolvido por ele e essa vamos chamar conta ineres, que vão ser controlados pelo gerente.</li>
 </ul>
 <p>Ilustração simples:</p>
 <p><img alt="Cluster" loading="lazy" src="https://i.postimg.cc/QtZ061JB/docker-cluster.png" /></p>
@@ -663,13 +728,13 @@
 <p>Quando o Docker funciona em modo de swarm, ainda é possível executar contêineres independentes em qualquer um dos anfitriões Docker que participam no swarm, bem como serviços de swarm. Uma diferença chave entre contêineres independentes e serviços de swarm é que apenas os gerentes de swarm podem gerir um swarm, enquanto os contêineres independentes podem ser iniciados em qualquer daemon. O Docker daemons da doca podem participar num swarm como gerentes, trabalhadores, ou ambos.</p>
 <p>Da mesma forma que se pode usar Docker Compose para definir e gerir contêineres, pode-se definir e gerir pilhas de serviços de Swarm.</p>
 <p>Continue a ler para obter detalhes sobre conceitos relacionados com os serviços de swarm de Docker, incluindo nós, serviços, tarefas, e equilíbrio de carga mais conhecido como Load balancing.</p>
-<p>A documentação docker, vai definir o swarm/gerentes como manage e os computadores com o docker de works e os noś de nodes.</p>
+<p>A documentação docker, vai definir o swarm/gerentes como manager e os trabalhadores de works.</p>
 <hr />
 <h2 id="nodes-no">Nodes - nó<a class="headerlink" href="#nodes-no" title="Permanent link">&para;</a></h2>
 <p>Um nó é um exemplo do motor Docker que participa no swarm. Também se pode pensar nisto como um nó de Docker. Pode-se correr um ou mais nós num único computador físico, ou em um servidor de nuvem, mas as implementações de swarm de produção incluem tipicamente nós Docker distribuídos por múltiplas máquinas físicas e de nuvem.</p>
 <p>Para implantar a sua aplicação num swarm, submete uma definição de serviço a um nó gerente. O nó gerente despacha unidades de trabalho chamadas tarefas para nós de trabalhadores.</p>
 <p>Os nós gerentes também executam as funções de orquestração e gerenciamento de agrupamento necessárias para manter o estado desejado do swarm. Os nós gerentes elegem um único líder para realizar tarefas de orquestração.</p>
-<p>Esses nós trabalhadores recebem e executam as tarefas enviadas pelos nós gerentes. Por defeito, os nós gerentes também executam serviços como nós trabalhadores, mas pode configurá-los para executar tarefas de gerenciamento exclusivamente e ser nós apenas gerentes. Um agente corre em cada nó de trabalhadores e informa sobre as tarefas que lhe são atribuídas. O nó trabalhadores notifica o nó gerente do estado atual das suas tarefas atribuídas, para que o gerente possa manter o estado desejado de cada trabalhadores.</p>
+<p>Esses nós trabalhadores recebem e executam as tarefas enviadas pelos nós gerentes. Por defeito, os nós gerentes também executam serviços como nós trabalhadores, mas pode configurá-los para executar tarefas de gerenciamento exclusivamente e ser nós apenas gerentes. Um agente corre em cada nó de trabalhadores e informa sobre as tarefas que lhe são atribuídas. O nó trabalhador notifica o nó gerente do estado atual das suas tarefas atribuídas, para que o gerente possa manter o estado desejado de cada trabalhadores.</p>
 <hr />
 <h2 id="tarefas-e-servicos">Tarefas e serviços<a class="headerlink" href="#tarefas-e-servicos" title="Permanent link">&para;</a></h2>
 <p>Um serviço é a definição das tarefas a executar nos nós do gerente ou do trabalhador. É a estrutura central do sistema do swarm e a raiz primária da interação do usuário com o swarm.</p>
@@ -683,13 +748,13 @@
 <p>Componentes externos, tais como equilibradores de carga de nuvem, podem acessar o serviço na porta de qualquer nó do cluster, quer o nó esteja ou não a executar a tarefa para o serviço. Todos os nós na rota de entrada do swarm de ligações a uma instância de tarefa em execução.</p>
 <p>O modo swarm tem um componente DNS interno que atribui automaticamente a cada serviço no swarm uma entrada DNS. O gerente do swarm utiliza o equilíbrio de carga interno para distribuir pedidos entre serviços dentro do cluster, com base no nome DNS do serviço.</p>
 <hr />
-<p><img alt="Raft" loading="lazy" src="https://i.postimg.cc/gkBsw-qW3/raft-guia.png" /></p>
 <h2 id="raft-consenso-distribuidos">Raft - Consenso Distribuídos<a class="headerlink" href="#raft-consenso-distribuidos" title="Permanent link">&para;</a></h2>
 <p>Antes de continuamos a estudar sobre swarm é importante falar sobre um algoritmo que se chama Raft, o responsável pelas decisões, é o cérebro dessa estrutura, para isso vou deixa aqui a <a href="https://raft.github.io/" target="_blank">Raft</a>.</p>
 <p>É muito importante que você entenda um pouco sobre o Raft, já que essa expressão vai se repetir mais algumas vezes, em kubernetes, por exemplo. Entender o raft é criar melhores aplicações que usam docker, kubernetes e outras soluções que usam esse cérebro por trás das decisões.</p>
 <p>Nesse ponto, encontrei dois vídeos didáticos sobre o assunto.</p>
-<p><a href="https://www.youtube.com/watch?v=N6G4bv-qo4w">Linuxtips</a> usar a explicação visual do <a href="http://thesecretlivesofdata.com/raft/">Ben Johnson</a> para explicar sobre raft</p>
-<p>E também <a href="https://www.infoq.com/br/presentations/algoritimos-consenso-sistemas-distribuidos/">Algoritmos de consenso em sistemas distribuídos (teoria e prática) - Edward Ribeiro</a> que vai abordar o raft e mais alguns algoritmos de consenso.</p>
+<p><a href="https://www.youtube.com/watch?v=N6G4bv-qo4w" target="_blank">Linuxtips</a> usar a explicação visual do <a href="http://thesecretlivesofdata.com/raft/" target="_blank">Ben Johnson</a> para explicar sobre raft</p>
+<p>E também <a href="https://www.infoq.com/br/presentations/algoritimos-consenso-sistemas-distribuidos/" target="_blank">Algoritmos de consenso em sistemas distribuídos (teoria e prática) - Edward Ribeiro</a> que vai abordar o raft e mais alguns algoritmos de consenso.</p>
+<p><img alt="Raft" loading="lazy" src="https://i.postimg.cc/gkBsw-qW3/raft-guia.png" /></p>
 
               
             </article>
@@ -718,6 +783,21 @@
         </a>
       
       
+        
+        <a href="../iniciando%20o%20swarm/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Iniciando o Swarm" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              Iniciando o Swarm
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
     </nav>
   
   <div class="md-footer-meta md-typeset">
@@ -743,7 +823,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.expand", "navigation.indexes", "navigation.sections", "navigation.tabs", "search.highlight", "search.share", "search.suggest", "toc.follow"], "translations": {"clipboard.copy": "Copiar para \u00e1rea de Transfer\u00eancia", "clipboard.copied": "Copiado para \u00e1rea de Transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Buscar", "search.result.placeholder": "Digite para iniciar a busca", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Perdido", "select.version.title": "Selecione a vers\u00e3o"}, "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../../assets/javascripts/bundle.8aa65030.min.js"></script>
+      <script src="../../assets/javascripts/bundle.467223ff.min.js"></script>
       
     
   </body>

@@ -1,0 +1,958 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
+    
+    
+      
+        <title>Iniciando o Swarm - Univesp por Estudantes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2d9f7617.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="yellow">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#iniciando-o-swarm" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Univesp por Estudantes" class="md-header__button md-logo" aria-label="Univesp por Estudantes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Univesp por Estudantes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Iniciando o Swarm
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="yellow"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Limpar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Univesp-Computacao/o_mundo_dos_conteineres" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Univesp-Computacao/o_mundo_dos_conteineres
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Inicio
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../docker/instala%C3%A7%C3%A3o/" class="md-tabs__link">
+        Docker
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../o%20que%20%C3%A9%20swarm/" class="md-tabs__link md-tabs__link--active">
+        Docker Swarm
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Univesp por Estudantes" class="md-nav__button md-logo" aria-label="Univesp por Estudantes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Univesp por Estudantes
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Univesp-Computacao/o_mundo_dos_conteineres" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Univesp-Computacao/o_mundo_dos_conteineres
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Docker
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Docker" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Docker
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/instala%C3%A7%C3%A3o/" class="md-nav__link">
+        Instalação
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/docker_hub/" class="md-nav__link">
+        Docker Hub
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/fluxo_containers/" class="md-nav__link">
+        Fluxo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/imagem/" class="md-nav__link">
+        Imagem
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/volumes/" class="md-nav__link">
+        Gerenciamento de Dados
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/redes/" class="md-nav__link">
+        Rede
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docker/compose/" class="md-nav__link">
+        Docker Compose
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Docker Swarm
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Docker Swarm" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Docker Swarm
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../o%20que%20%C3%A9%20swarm/" class="md-nav__link">
+        O que é Swarm?
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Iniciando o Swarm
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Iniciando o Swarm
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#primeiro-gerente" class="md-nav__link">
+    Primeiro Gerente
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primeiro-trabalhador" class="md-nav__link">
+    Primeiro Trabalhador
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-nodes" class="md-nav__link">
+    Nó - Nodes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../servi%C3%A7os/" class="md-nav__link">
+        Serviço
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ingress/" class="md-nav__link">
+        Ingress
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker%20stack/" class="md-nav__link">
+        Docker Stack
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#primeiro-gerente" class="md-nav__link">
+    Primeiro Gerente
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primeiro-trabalhador" class="md-nav__link">
+    Primeiro Trabalhador
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-nodes" class="md-nav__link">
+    Nó - Nodes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="iniciando-o-swarm">Iniciando o Swarm<a class="headerlink" href="#iniciando-o-swarm" title="Permanent link">&para;</a></h1>
+<p>Bem, chegamos a um ponto importante aqui que é a criação de uma rede de computadores, mas criar uma rede não é tão simples, mesmo que fizesse o passo a passo, vai levar muito tempo com muitas variáveis que podem dar errado, então para conseguimos usar o docker swarm vamos usar o <a href="https://labs.play-with-docker.com/#" target="_blank">Play With Docker</a></p>
+<p>Vai facilitar demais e vamos conseguir subir imagens normalmente, ele já vem com o docker instalado.</p>
+<ol>
+<li>Aperte <strong>Start</strong></li>
+<li>Ele vai solicitar seu login do docker, sua conta criado quando começamos a usar o docker hub.</li>
+<li>Em seguida se ele não redirecionar basta aperta <strong>Start</strong> novamente.</li>
+<li>Assim que ele abrir a página, não tenha nenhuma aplicação no momento, basta ficar tentando até conseguir acessar.</li>
+<li>Quando a aplicação subir vamos ter essa pagina:</li>
+</ol>
+<p><img alt="Play" loading="lazy" src="https://i.postimg.cc/R0gVmH3C/image.png" /></p>
+<p>Vamos adicionar 5 instancias, basta pressionar o <strong>+ADD NEW INSTANCE</strong> que ele vai gerar automaticamente os <strong>computadores</strong>:</p>
+<p><img alt="Exemplo" loading="lazy" src="https://i.postimg.cc/g02NSnfb/image.png" /></p>
+<h2 id="primeiro-gerente">Primeiro Gerente<a class="headerlink" href="#primeiro-gerente" title="Permanent link">&para;</a></h2>
+<p>Para iniciar o swarm, usaremos o <a href="https://docs.docker.com/engine/reference/commandline/swarm_init/" target="_blank">docker swarm init</a>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker swarm init
+</code></pre></div>
+<p>Escolha umas das máquinas para roda o comando e observe a saída:</p>
+<p><img alt="image do erro" loading="lazy" src="https://i.postimg.cc/P5W53q1y/image.png" /></p>
+<p>Nesse erro, ele nos diz que não anunciamos o IP que devemos usar, o IP que as maquinas estão na rede, para isso vamos usar a variável que ele solicita  <strong>--advertise-addr</strong> e passar o IP, é importante sempre passar essa flag e o IP de umas das máquinas, para fixamos a máquina que criou o swarm.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker swarm init --advertise-addr <span class="m">192</span>.168.0.13
+</code></pre></div>
+<p>E iniciamos o nosso swarm:</p>
+<p><img alt="Swarm Feito" loading="lazy" src="https://i.postimg.cc/Prq7VVZR/image.png" /></p>
+<p>A maquina que inicializa o comando, automaticamente se torna líder, ou seja, já temos nosso primeiro gerente.</p>
+<p>Nesse momento, ele vai passar dois comandos para que possamos adicionar novos gerentes ou novos trabalhadores:</p>
+<ol>
+<li><strong>Gerentes</strong>: <a href="https://docs.docker.com/engine/reference/commandline/swarm_join-token/" target="_blank">docker swarm join</a> com a flag <strong>-token manager</strong></li>
+<li><strong>Trabalhadores</strong>: <strong>docker swarm join</strong> mais a flag <strong>--token SWMTKN-1-317lss7q287qzea30syrpzsnb7dlzcp5xqppqomkz0dpwlf0jv-3qzxl99iwvxo1b7zr2463xgdf 192.168.0.13:2377</strong> passando o token e o IP para os novos computadores se unirem ao swarm.</li>
+</ol>
+<p>Antes de continuamos, vamos imaginar que você tenha deixado o ambiente rodando lá e ficou um ano sem acessar, ai um belo dia você volta contudo não lembra qual maquina é a que iniciou o swarm ou se ela está no swarm, para isso vamos usar o <a href="https://docs.docker.com/engine/reference/commandline/info/" target="_blank">docker info</a>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker info
+</code></pre></div>
+<p>E a saída vai ser ± essa aqui:</p>
+<details class="note">
+<summary>Saida</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Client:
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a> Context:    default
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a> Debug Mode: <span class="nb">false</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a> Plugins:
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>  app: Docker App <span class="o">(</span>Docker Inc., v0.9.1-beta3<span class="o">)</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>Server:
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a> Containers: <span class="m">0</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>  Running: <span class="m">0</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>  Paused: <span class="m">0</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>  Stopped: <span class="m">0</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a> Images: <span class="m">0</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a> Server Version: <span class="m">20</span>.10.0
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a> Storage Driver: overlay2
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>  Backing Filesystem: xfs
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>  Supports d_type: <span class="nb">true</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>  Native Overlay Diff: <span class="nb">true</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a> Logging Driver: json-file
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a> Cgroup Driver: cgroupfs
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a> Cgroup Version: <span class="m">1</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a> Plugins:
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>  Volume: <span class="nb">local</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>  Network: bridge host ipvlan macvlan null overlay
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>  Log: awslogs fluentd gcplogs gelf journald json-file <span class="nb">local</span> logentries splunk syslog
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a> Swarm: active
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>  NodeID: tv5szgmtbqunlbhkv4jqqdjrz
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>  Is Manager: <span class="nb">true</span>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>  ClusterID: qxz7jhjgyd5ldoy7o1vcutbfn
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>  Managers: <span class="m">1</span>
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>  Nodes: <span class="m">1</span>
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>  Default Address Pool: <span class="m">10</span>.0.0.0/8  
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>  SubnetSize: <span class="m">24</span>
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>  Data Path Port: <span class="m">4789</span>
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>  Orchestration:
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>   Task History Retention Limit: <span class="m">5</span>
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>  Raft:
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>   Snapshot Interval: <span class="m">10000</span>
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>   Number of Old Snapshots to Retain: <span class="m">0</span>
+<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>   Heartbeat Tick: <span class="m">1</span>
+<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>   Election Tick: <span class="m">10</span>
+<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>  Dispatcher:
+<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a>   Heartbeat Period: <span class="m">5</span> seconds
+<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a>  CA Configuration:
+<a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a>   Expiry Duration: <span class="m">3</span> months
+<a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a>   Force Rotate: <span class="m">0</span>
+<a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a>  Autolock Managers: <span class="nb">false</span>
+<a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a>  Root Rotation In Progress: <span class="nb">false</span>
+<a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a>  Node Address: <span class="m">192</span>.168.0.13
+<a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a>  Manager Addresses:
+<a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a>   <span class="m">192</span>.168.0.13:2377
+<a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a> Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
+<a id="__codelineno-3-52" name="__codelineno-3-52" href="#__codelineno-3-52"></a> Default Runtime: runc
+<a id="__codelineno-3-53" name="__codelineno-3-53" href="#__codelineno-3-53"></a> Init Binary: docker-init
+<a id="__codelineno-3-54" name="__codelineno-3-54" href="#__codelineno-3-54"></a> containerd version: 269548fa27e0089a8b8278fc4fc781d7f65a939b
+<a id="__codelineno-3-55" name="__codelineno-3-55" href="#__codelineno-3-55"></a> runc version: ff819c7e9184c13b7c2607fe6c30ae19403a7aff
+<a id="__codelineno-3-56" name="__codelineno-3-56" href="#__codelineno-3-56"></a> init version: de40ad0
+<a id="__codelineno-3-57" name="__codelineno-3-57" href="#__codelineno-3-57"></a> Security Options:
+<a id="__codelineno-3-58" name="__codelineno-3-58" href="#__codelineno-3-58"></a>  apparmor
+<a id="__codelineno-3-59" name="__codelineno-3-59" href="#__codelineno-3-59"></a>  seccomp
+<a id="__codelineno-3-60" name="__codelineno-3-60" href="#__codelineno-3-60"></a>   Profile: default
+<a id="__codelineno-3-61" name="__codelineno-3-61" href="#__codelineno-3-61"></a> Kernel Version: <span class="m">4</span>.4.0-210-generic
+<a id="__codelineno-3-62" name="__codelineno-3-62" href="#__codelineno-3-62"></a> Operating System: Alpine Linux v3.12 <span class="o">(</span>containerized<span class="o">)</span>
+<a id="__codelineno-3-63" name="__codelineno-3-63" href="#__codelineno-3-63"></a> OSType: linux
+<a id="__codelineno-3-64" name="__codelineno-3-64" href="#__codelineno-3-64"></a> Architecture: x86_64
+<a id="__codelineno-3-65" name="__codelineno-3-65" href="#__codelineno-3-65"></a> CPUs: <span class="m">8</span>
+<a id="__codelineno-3-66" name="__codelineno-3-66" href="#__codelineno-3-66"></a> Total Memory: <span class="m">31</span>.42GiB
+<a id="__codelineno-3-67" name="__codelineno-3-67" href="#__codelineno-3-67"></a> Name: node1
+<a id="__codelineno-3-68" name="__codelineno-3-68" href="#__codelineno-3-68"></a> ID: MLNO:DP7B:WIP5:4LLV:IUGJ:B5DP:KMRL:PZ2Z:A7Y3:7XLT:Z4NJ:UULR
+<a id="__codelineno-3-69" name="__codelineno-3-69" href="#__codelineno-3-69"></a> Docker Root Dir: /var/lib/docker
+<a id="__codelineno-3-70" name="__codelineno-3-70" href="#__codelineno-3-70"></a> Debug Mode: <span class="nb">true</span>
+<a id="__codelineno-3-71" name="__codelineno-3-71" href="#__codelineno-3-71"></a>  File Descriptors: <span class="m">38</span>
+<a id="__codelineno-3-72" name="__codelineno-3-72" href="#__codelineno-3-72"></a>  Goroutines: <span class="m">155</span>
+<a id="__codelineno-3-73" name="__codelineno-3-73" href="#__codelineno-3-73"></a>  System Time: <span class="m">2022</span>-03-05T23:02:27.17700525Z
+<a id="__codelineno-3-74" name="__codelineno-3-74" href="#__codelineno-3-74"></a>  EventsListeners: <span class="m">0</span>
+<a id="__codelineno-3-75" name="__codelineno-3-75" href="#__codelineno-3-75"></a> Registry: https://index.docker.io/v1/
+<a id="__codelineno-3-76" name="__codelineno-3-76" href="#__codelineno-3-76"></a> Labels:
+<a id="__codelineno-3-77" name="__codelineno-3-77" href="#__codelineno-3-77"></a> Experimental: <span class="nb">true</span>
+<a id="__codelineno-3-78" name="__codelineno-3-78" href="#__codelineno-3-78"></a> Insecure Registries:
+<a id="__codelineno-3-79" name="__codelineno-3-79" href="#__codelineno-3-79"></a>  <span class="m">127</span>.0.0.1
+<a id="__codelineno-3-80" name="__codelineno-3-80" href="#__codelineno-3-80"></a>  <span class="m">127</span>.0.0.0/8
+<a id="__codelineno-3-81" name="__codelineno-3-81" href="#__codelineno-3-81"></a> Live Restore Enabled: <span class="nb">false</span>
+<a id="__codelineno-3-82" name="__codelineno-3-82" href="#__codelineno-3-82"></a> Product License: Community Engine
+</code></pre></div>
+</details>
+<p>E nessa lista todas temos o <strong>Swarm: active</strong>, significa que o swarm está ativo e o <strong>Is Manager: true</strong> que diz que a maquina é um gerente.</p>
+<h2 id="primeiro-trabalhador">Primeiro Trabalhador<a class="headerlink" href="#primeiro-trabalhador" title="Permanent link">&para;</a></h2>
+<p>Agora que temos nosso swarm, vamos inserir mais computadores, vamos usar o <a href="https://docs.docker.com/engine/reference/commandline/swarm_join/" target="_blank">docker swarm join</a></p>
+<p>Nas outras instancias que você tiver, basta copia o comando com shift+insert que o docker fornece, no meu caso é:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker swarm join --token SWMTKN-1-317lss7q287qzea30syrpzsnb7dlzcp5xqppqomkz0dpwlf0jv-3qzxl99iwvxo1b7zr2463xgdf <span class="m">192</span>.168.0.13:2377
+</code></pre></div>
+<p>E a saida:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>This node joined a swarm as a worker.
+</code></pre></div>
+<p>Agora faça isso em todas as instâncias que você criou, recomendo não passar de 5 por questão de estabilidade e desempenho do serviço.</p>
+<p>Se você perde o token, não precisa anotar nenhum comando, basta no ir ao terminal do gerente e pergunta para ele, usando o comando <a href="https://docs.docker.com/engine/reference/commandline/swarm_join-token/" target="_blank">docker swarm join-token</a> e passe quem você quer saber, worker ou maneger</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker swarm join-token worker
+</code></pre></div>
+<h2 id="no-nodes">Nó - Nodes<a class="headerlink" href="#no-nodes" title="Permanent link">&para;</a></h2>
+<p>Precisamos ver de uma forma geral nosso swarm, para isso vamos usar o comando <a _:target="_blank" href="https://docs.docker.com/engine/reference/commandline/node_ls/">docker node ls</a>, no gerente, se usar no trabalhador, vai dá um erro.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>ID                            HOSTNAME   STATUS    AVAILABILITY   MANAGER STATUS   ENGINE VERSION
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>tv5szgmtbqunlbhkv4jqqdjrz *   node1      Ready     Active         Leader           <span class="m">20</span>.10.0
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>somcfzr1i52h02s32g8162jv5     node2      Ready     Active                          <span class="m">20</span>.10.0
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>m3ug6hoe28zz1dap3ejhqug6n     node3      Ready     Active                          <span class="m">20</span>.10.0
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>le62bq94ze1eagudy8dtx12ed     node4      Ready     Active                          <span class="m">20</span>.10.0
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>aedfo2gsp1ky5cbzb7vmj1eqy     node5      Ready     Active                          <span class="m">20</span>.10.0
+</code></pre></div>
+<p>Explicando:</p>
+<ul>
+<li><strong>ID</strong>: É o ID do nó, e o nó com * é o nó que iniciou o swarm.</li>
+<li><strong>HOSTNAME</strong>: Nome das máquinas</li>
+<li><strong>STATUS</strong>: Que está funcionando normalmente</li>
+<li><strong>AVAILABILITY</strong>: Que vai rodar contêineres normalmente</li>
+<li><strong>MANAGER STATUS</strong>: Quem são os gerentes e o líder, todos os, nó sem informação, vazio, são workes para o docker.</li>
+<li><strong>ENGINE VERSION</strong>: Engine é a versão do docker.</li>
+</ul>
+<p>Para exemplificar, vamos roda o comando em um trabalhador:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Error response from daemon: This node is not a swarm manager. Worker nodes can<span class="err">&#39;</span>t be used to view or modify cluster state. Please run this <span class="nb">command</span> on a manager node or promote the current node to a manager.
+</code></pre></div>
+<p>Então todos os comandos de alteração ou visualização, somente em nó gerente. Por exemplo, vamos remover um nó do cluster, usando o <a href="https://docs.docker.com/engine/reference/commandline/node_rm/" target="_blank">docker node rm</a>, basta passar o ID do nó que você quer derrubar.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Execute</label><label for="__tabbed_1_2">Saida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>docker node rm aedfo2gsp1ky5cbzb7vmj1eqy
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Error response from daemon: rpc error: <span class="nv">code</span> <span class="o">=</span> FailedPrecondition <span class="nv">desc</span> <span class="o">=</span> node aedfo2gsp1ky5cbzb7vmj1eqy is not down and can<span class="err">&#39;</span>t be removed
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>O erro está dizendo que o nó que tentamos remover não está com o status <strong>down</strong>, para resolver isso precisamos ir ao nó que queremos derrubar e usar o <a href="https://docs.docker.com/engine/reference/commandline/swarm_leave/" target="_blank">docker swarm leave</a>para muda o status do nó.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Execute</label><label for="__tabbed_2_2">Saida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>docker swarm leave
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Node left the swarm.
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>Retorne para o nó gerente:</p>
+<div class="highlight"><pre><span></span><code>```bash
+docker node ls
+```
+</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Saida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>ID                            HOSTNAME   STATUS    AVAILABILITY   MANAGER STATUS   ENGINE VERSION
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>tv5szgmtbqunlbhkv4jqqdjrz *   node1      Ready     Active         Leader           <span class="m">20</span>.10.0
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>somcfzr1i52h02s32g8162jv5     node2      Ready     Active                          <span class="m">20</span>.10.0
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>m3ug6hoe28zz1dap3ejhqug6n     node3      Ready     Active                          <span class="m">20</span>.10.0
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>le62bq94ze1eagudy8dtx12ed     node4      Ready     Active                          <span class="m">20</span>.10.0
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>aedfo2gsp1ky5cbzb7vmj1eqy     node5      Down      Active                          <span class="m">20</span>.10.0
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>O <strong>status</strong> do nó 5 mudou para <strong>down</strong> e com isso podemos remover efetivamente o nó.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>docker node rm aedfo2gsp1ky5cbzb7vmj1eqy
+</code></pre></div>
+<p>E de outro <strong>docker node ls</strong> para confirmar.</p>
+<p>Adicione o nó novamente para continuamos, use o <a href="https://docs.docker.com/engine/reference/commandline/swarm_join/" target="_blank">docker swarm join</a></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Rodapé">
+      
+        
+        <a href="../o%20que%20%C3%A9%20swarm/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: O que é Swarm?" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              O que é Swarm?
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../servi%C3%A7os/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Serviço" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              Serviço
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.expand", "navigation.indexes", "navigation.sections", "navigation.tabs", "search.highlight", "search.share", "search.suggest", "toc.follow"], "translations": {"clipboard.copy": "Copiar para \u00e1rea de Transfer\u00eancia", "clipboard.copied": "Copiado para \u00e1rea de Transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Buscar", "search.result.placeholder": "Digite para iniciar a busca", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Perdido", "select.version.title": "Selecione a vers\u00e3o"}, "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.467223ff.min.js"></script>
+      
+    
+  </body>
+</html>
