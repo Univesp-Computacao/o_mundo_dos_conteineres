@@ -19,6 +19,23 @@ Temos essa imagem para ilustra melhor esse conceito:
 + **Contêineres**: Os contêineres armazenam um microsserviço ou aplicação, além de todos os elementos necessários para executá-los. Tudo que eles contêm é mantido em um recurso chamado imagem: um arquivo baseado em código que inclui todas as bibliotecas e dependências. Pense nesses arquivos como uma instalação da distribuição Linux, já que a imagem inclui pacotes RPM e arquivos de configuração. Como os contêineres são muito pequenos, geralmente há centenas deles levemente acoplados.
 
 ----
+
+## Beneficios de usar Contêineres
+
+Contêineres se tornaram populares porque eles fornecem benefícios extra, tais como:
+
++ Criação e implantação ágil de aplicações: aumento da facilidade e eficiência na criação de imagem de contêiner comparado ao uso de imagem de VM.
++ Desenvolvimento, integração e implantação contínuos: fornece capacidade de criação e de implantação de imagens de contêiner de forma confiável e frequente, com a funcionalidade de efetuar reversões rápidas e eficientes (devido à imutabilidade da imagem).
++ Separação de interesses entre Desenvolvimento e Operações: crie imagens de contêineres de aplicações no momento de construção/liberação em vez de no momento de implantação, desacoplando as aplicações da infraestrutura.
++ A capacidade de observação (Observabilidade) não apenas apresenta informações e métricas no nível do sistema operacional, mas também a integridade da aplicação e outros sinais.
++ Consistência ambiental entre desenvolvimento, teste e produção: funciona da mesma forma em um laptop e na nuvem.
++ Portabilidade de distribuição de nuvem e sistema operacional: executa no Ubuntu, RHEL, CoreOS, localmente, nas principais nuvens públicas e em qualquer outro lugar.
++ Gerenciamento centrado em aplicações: eleva o nível de abstração da execução em um sistema operacional em hardware virtualizado à execução de uma aplicação em um sistema operacional usando recursos lógicos.
++ Microserviços fracamente acoplados, distribuídos, elásticos e livres: as aplicações são divididas em partes menores e independentes e podem ser implantados e gerenciados dinamicamente - não uma pilha monolítica em execução em uma grande máquina de propósito único.
++ Isolamento de recursos: desempenho previsível de aplicações.
++ Utilização de recursos: alta eficiência e densidade
+
+----
 Já que sabemos a diferença entre VM e Contêineres, precisamos entender aonde essa solução se encaixa, pois, com as mudanças que a tecnologia traz no decorrer da sua história, é preciso entender as novas práticas de TI com as tradicionais para chegamos a um ponto-chave dessa pergunta:
 
 + **As novas práticas de TI** (desenvolvimento nativo em nuvem, CI/CD e DevOps) existem graças à divisão das cargas de trabalho nas menores unidades úteis possíveis, que geralmente são uma função ou um microsserviço. Essas unidades são melhor empacotadas em contêineres. Assim, várias equipes podem trabalhar em partes separadas de uma aplicação ou serviço sem interromper, ou pôr em risco o código empacotado em outros contêineres.
@@ -93,10 +110,6 @@ Nesse tema vamos aborda sobre e praticar:
     + [x] Docker Swarm: Cluster do Docker
     + [ ] Usar o Vagrant para criação da infraestrutura do Swarm
 + [ ] Kubernetes
-    + [ ] Cluster
-    + [ ] Plano de controle
-    + [ ] Kubelet
-    + [ ] Pod
 + [ ] Google Kubernetes
 + [ ] Amazon Kubernetes
 + [ ] Azure Kubernetes
