@@ -5,7 +5,7 @@ Bem, chegamos a um ponto importante aqui que é a criação de uma rede de compu
 Vai facilitar demais e vamos conseguir subir imagens normalmente, ele já vem com o docker instalado.
 
 1. Aperte **Start**
-2. Ele vai solicitar seu login do docker, sua conta criado quando começamos a usar o docker hub.
+2. Ele vai solicitar seu login do docker.
 3. Em seguida se ele não redirecionar basta aperta **Start** novamente.
 4. Assim que ele abrir a página, não tenha nenhuma aplicação no momento, basta ficar tentando até conseguir acessar.
 5. Quando a aplicação subir vamos ter essa pagina:
