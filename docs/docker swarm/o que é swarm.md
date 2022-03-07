@@ -9,7 +9,7 @@ E em seguida transformamos isso em código e estrutura, chegamos nesse modelo:
 + **Pessoas que tocam a orquestra**: São os computadores, para cada pessoa, imagine um computador
 + **Instrumentos**: Para cada instrumento, imagine que seja um docker/trabalhador
 + **Maestro**: Esse é o cara, no docker, chamamos ele de Swarm/gerente, é o responsável por dividir, gerenciar e garantir a estabilidade e tudo isso sem precisar que alguém fique de olho.
-+ **Musica**: Por ultimo a musica, qual nota tocar? quando tocar? atento a cada nota, se houver um erro é resolvido por ele e essa vamos chamar conta ineres, que vão ser controlados pelo gerente.
++ **Música**: Por último a música, qual nota tocar? Quando tocar? Atento a cada nota, se houver um erro é resolvido por ele e essa vamos chamar conta ineres, que vão ser controlados pelo gerente.
 
 Ilustração simples:
 
@@ -31,7 +31,7 @@ Da mesma forma que se pode usar Docker Compose para definir e gerir contêineres
 
 Continue a ler para obter detalhes sobre conceitos relacionados com os serviços de swarm de Docker, incluindo nós, serviços, tarefas, e equilíbrio de carga mais conhecido como Load balancing.
 
-A documentação docker, vai definir o swarm/gerentes como manage e os computadores com o docker de works e os noś de nodes.
+A documentação docker, vai definir o swarm/gerentes como manager e os trabalhadores de works.
 
 ----
 
@@ -43,7 +43,7 @@ Para implantar a sua aplicação num swarm, submete uma definição de serviço 
 
 Os nós gerentes também executam as funções de orquestração e gerenciamento de agrupamento necessárias para manter o estado desejado do swarm. Os nós gerentes elegem um único líder para realizar tarefas de orquestração.
 
-Esses nós trabalhadores recebem e executam as tarefas enviadas pelos nós gerentes. Por defeito, os nós gerentes também executam serviços como nós trabalhadores, mas pode configurá-los para executar tarefas de gerenciamento exclusivamente e ser nós apenas gerentes. Um agente corre em cada nó de trabalhadores e informa sobre as tarefas que lhe são atribuídas. O nó trabalhadores notifica o nó gerente do estado atual das suas tarefas atribuídas, para que o gerente possa manter o estado desejado de cada trabalhadores.
+Esses nós trabalhadores recebem e executam as tarefas enviadas pelos nós gerentes. Por defeito, os nós gerentes também executam serviços como nós trabalhadores, mas pode configurá-los para executar tarefas de gerenciamento exclusivamente e ser nós apenas gerentes. Um agente corre em cada nó de trabalhadores e informa sobre as tarefas que lhe são atribuídas. O nó trabalhador notifica o nó gerente do estado atual das suas tarefas atribuídas, para que o gerente possa manter o estado desejado de cada trabalhadores.
 
 ----
 
@@ -71,8 +71,6 @@ O modo swarm tem um componente DNS interno que atribui automaticamente a cada se
 
 ----
 
-![Raft](https://i.postimg.cc/gkBsw-qW3/raft-guia.png){ loading=lazy }
-
 ## Raft - Consenso Distribuídos
 
 Antes de continuamos a estudar sobre swarm é importante falar sobre um algoritmo que se chama Raft, o responsável pelas decisões, é o cérebro dessa estrutura, para isso vou deixa aqui a [Raft](https://raft.github.io/){:target="_blank"}.
@@ -81,6 +79,8 @@ Antes de continuamos a estudar sobre swarm é importante falar sobre um algoritm
 
 Nesse ponto, encontrei dois vídeos didáticos sobre o assunto.
 
-[Linuxtips](https://www.youtube.com/watch?v=N6G4bv-qo4w) usar a explicação visual do [Ben Johnson](http://thesecretlivesofdata.com/raft/) para explicar sobre raft
+[Linuxtips](https://www.youtube.com/watch?v=N6G4bv-qo4w){:target="_blank"} usar a explicação visual do [Ben Johnson](http://thesecretlivesofdata.com/raft/){:target="_blank"} para explicar sobre raft
 
-E também [Algoritmos de consenso em sistemas distribuídos (teoria e prática) - Edward Ribeiro](https://www.infoq.com/br/presentations/algoritimos-consenso-sistemas-distribuidos/) que vai abordar o raft e mais alguns algoritmos de consenso.
+E também [Algoritmos de consenso em sistemas distribuídos (teoria e prática) - Edward Ribeiro](https://www.infoq.com/br/presentations/algoritimos-consenso-sistemas-distribuidos/){:target="_blank"} que vai abordar o raft e mais alguns algoritmos de consenso.
+
+![Raft](https://i.postimg.cc/gkBsw-qW3/raft-guia.png){ loading=lazy }

@@ -122,3 +122,7 @@ nav:
     - Docker Compose: docker/compose.md
   - Docker Swarm:
     - O que é Swarm?: docker swarm/o que é swarm.md
+    - Iniciando o Swarm: docker swarm/iniciando o swarm.md
+    - Serviço: docker swarm/serviços.md
+    - Ingress: docker swarm/ingress.md
+    - Docker Stack: docker swarm/docker stack.md

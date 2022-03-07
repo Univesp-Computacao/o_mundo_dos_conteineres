@@ -2,6 +2,8 @@
 
 Para iniciar essa conversa acho importante ter uma visão geral sobre o conteúdo é importante que você assista o video do [Código Fonte TV](https://www.youtube.com/watch?v=-pUZBovqRcU){:target="_blank"} que explica sobre contêineres.
 
+E também esse [Containers, Docker e Kubernetes com Giovanni Bassi](https://www.youtube.com/watch?v=wxLvvMxzc1Q){:target="_blank"} que fala um pouco sobre essas mudanças que os contêineres fizeram.
+
 ## Como contêineres funcionam?
 
 Temos agora uma base teórica para trabalhar, reforçaremos o conceito de Máquina Virtual e Contêineres:
@@ -88,7 +90,8 @@ As ferramentas de orquestração de contêineres fornecem um framework para gere
 Nesse tema vamos aborda sobre e praticar:
 
 + [x] Docker
-    + [ ] Docker Swarm: Cluster do Docker
+    + [x] Docker Swarm: Cluster do Docker
+    + [ ] Usar o Vagrant para criação da infraestrutura do Swarm
 + [ ] Kubernetes
     + [ ] Cluster
     + [ ] Plano de controle
