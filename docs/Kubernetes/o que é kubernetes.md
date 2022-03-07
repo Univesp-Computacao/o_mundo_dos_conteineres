@@ -1,6 +1,6 @@
 # O que é Kubernetes?
 
-Para acessar o repositorio [Github Kubernetes](https://github.com/kubernetes/kubernetes){:target="_blank"} e o [site](https://github.com/kubernetes/kubernetes){:target="_blank"}
+Para acessar o repositorio [Github Kubernetes](https://github.com/kubernetes/kubernetes){:target="_blank"} e o [Kubernetes.io](https://kubernetes.io/pt-br/){:target="_blank"}
 
 O Google tornou Kubernetes um projeto de código-aberto em 2014. O Kubernetes combina mais de 15 anos de experiência do Google executando cargas de trabalho produtivas em escala, com as melhores idéias e práticas da comunidade.
 
