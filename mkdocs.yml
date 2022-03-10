@@ -128,3 +128,5 @@ nav:
     - Docker Stack: docker swarm/docker stack.md
   - Kubernetes:
     - O que é Kubernetes: Kubernetes/o que é kubernetes.md
+    - Instalação: Kubernetes/instalação.md
+    - Pods: Kubernetes/pods.md
