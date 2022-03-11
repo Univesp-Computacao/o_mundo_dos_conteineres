@@ -602,6 +602,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4">
@@ -718,8 +720,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#nao-finalizado" class="md-nav__link">
-    NÃO FINALIZADO
+  <a href="#load-balancer" class="md-nav__link">
+    Load Balancer
   </a>
   
 </li>
@@ -728,6 +730,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projeto/" class="md-nav__link">
+        Projeto
+      </a>
     </li>
   
 
@@ -800,8 +816,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#nao-finalizado" class="md-nav__link">
-    NÃO FINALIZADO
+  <a href="#load-balancer" class="md-nav__link">
+    Load Balancer
   </a>
   
 </li>
@@ -990,7 +1006,37 @@ svc-pod      ClusterIP   10.105.54.122   &lt;none&gt;        4050/TCP   9m4s
 </div>
 </div>
 </div>
-<h2 id="nao-finalizado">NÃO FINALIZADO<a class="headerlink" href="#nao-finalizado" title="Permanent link">&para;</a></h2>
+<p>Novamente, precisamos inicializar o serviço e em seguida o POD.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Execute</label><label for="__tabbed_5_2">Saida</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>kubectl get nodes -o wide
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>NAME       STATUS   ROLES                  AGE     VERSION   INTERNAL-IP    EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>minikube   Ready    control-plane,master   3d22h   v1.23.3   <span class="m">192</span>.168.49.2   &lt;none&gt;        Ubuntu <span class="m">20</span>.04.2 LTS   <span class="m">5</span>.15.25-1-MANJARO   docker://20.10.12
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>Precisamos do <strong>INTERNAL-IP</strong> e com isso passamos a porta <strong>30000</strong> no navegador, no meu caso <strong>192.168.49.2:30000</strong>.</p>
+<hr />
+<h2 id="load-balancer">Load Balancer<a class="headerlink" href="#load-balancer" title="Permanent link">&para;</a></h2>
+<p>Por padrão, os serviços em nuvem que prestam a integração do Kubernetes já disponibilizam o Load Balance, por trás dos panos ele faz tanto o trabalho de ClusterIP e se integra de forma automatica ao NodePort, ou seja, a porta externa é disponibilizada pelo Load Balance do provedor.</p>
+<p>Vou deixar um exemplo de .yaml para Load Balance.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span><span class="w"></span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Service</span><span class="w"></span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">svc-loadbalancer</span><span class="w"></span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="nt">spec</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LoadBalancer</span><span class="w"></span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">  </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">80</span><span class="w"></span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w">      </span><span class="nt">nodePort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30000</span><span class="w"></span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="w">  </span><span class="nt">selector</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pod-label1</span><span class="w"></span>
+</code></pre></div>
 
               
             </article>
@@ -1018,6 +1064,21 @@ svc-pod      ClusterIP   10.105.54.122   &lt;none&gt;        4050/TCP   9m4s
           </div>
         </a>
       
+      
+        
+        <a href="../projeto/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Projeto" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              Projeto
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
