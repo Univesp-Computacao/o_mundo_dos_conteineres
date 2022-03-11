@@ -219,4 +219,41 @@ Criando um NodePort.
             app: pod-label2
     ```
 
-## NÃO FINALIZADO
+Novamente, precisamos inicializar o serviço e em seguida o POD.
+
+=== "Execute"
+
+    ```bash
+    kubectl get nodes -o wide
+    ```
+
+=== "Saida"
+
+    ```bash
+    NAME       STATUS   ROLES                  AGE     VERSION   INTERNAL-IP    EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME
+    minikube   Ready    control-plane,master   3d22h   v1.23.3   192.168.49.2   <none>        Ubuntu 20.04.2 LTS   5.15.25-1-MANJARO   docker://20.10.12
+    ```
+
+Precisamos do **INTERNAL-IP** e com isso passamos a porta **30000** no navegador, no meu caso **192.168.49.2:30000**.
+
+----
+
+## Load Balancer
+
+Por padrão, os serviços em nuvem que prestam a integração do Kubernetes já disponibilizam o Load Balance, por trás dos panos ele faz tanto o trabalho de ClusterIP e se integra de forma automatica ao NodePort, ou seja, a porta externa é disponibilizada pelo Load Balance do provedor.
+
+Vou deixar um exemplo de .yaml para Load Balance.
+
+```YAML
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-loadbalancer
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      nodePort: 30000
+  selector:
+    app: pod-label1
+```

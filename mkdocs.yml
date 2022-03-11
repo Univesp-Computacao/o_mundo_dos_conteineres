@@ -84,6 +84,7 @@ markdown_extensions:
       repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
+  - pymdownx.progressbar
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -130,3 +131,4 @@ nav:
     - O que é Kubernetes: Kubernetes/o que é kubernetes.md
     - Instalação: Kubernetes/instalação.md
     - Pods: Kubernetes/pods.md
+    - Projeto: Kubernetes/projeto.md

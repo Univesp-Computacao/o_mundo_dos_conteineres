@@ -106,13 +106,13 @@ As ferramentas de orquestração de contêineres fornecem um framework para gere
 
 Nesse tema vamos aborda sobre e praticar:
 
-+ [x] Docker
-    + [x] Docker Swarm: Cluster do Docker
-    + [ ] Usar o Vagrant para criação da infraestrutura do Swarm
-+ [ ] Kubernetes
-+ [ ] Google Kubernetes
-+ [ ] Amazon Kubernetes
-+ [ ] Azure Kubernetes
++ [x] Docker 100%
+    + [x] Docker Swarm: Cluster do Docker 100%
+    + [ ] Usar o Vagrant para criação da infraestrutura do Swarm 0%
++ [ ] Kubernetes 60%
++ [ ] Amazon Kubernetes 0%
++ [ ] Azure Kubernetes 0%
++ [ ] GCP Kubernetes 0%
 
 ----
 
