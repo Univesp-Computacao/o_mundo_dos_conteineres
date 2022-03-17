@@ -6,7 +6,6 @@ Bem, para simplificar iremos criar um .yaml e passar no kind o Deployment, que v
 
 ![deployment](https://i.postimg.cc/4xrtynDg/image.png){ loading=lazy }
 
-
 Para simplicar ainda mais é praticamente um ReplicaSet com versionamento.
 
 Crie o arquivo .yaml e vamos executar:
@@ -111,6 +110,8 @@ REVISION  CHANGE-CAUSE
 2         alteração da imagem para a versão 1
 ```
 
+Lembrando que é importante você anotar sempre que mudar de versão.
+
 E para retorna para alguma versão especifica:
 
 ```bash
@@ -126,3 +127,5 @@ kubectl scale deployment/nginx-deployment --replicas=10
 ```
 
 Usando o **scale** e com a flag **--replicas** definimos a quantidade de replicas.
+
+Leia a [Documentação](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/){:target="_blank"} para ter mais informações.
