@@ -132,3 +132,5 @@ nav:
     - Instalação: Kubernetes/instalação.md
     - Pods: Kubernetes/pods.md
     - Projeto: Kubernetes/projeto.md
+    - ReplicaSet: Kubernetes/replicaset.md
+    - Deployment: Kubernetes/deployment.md

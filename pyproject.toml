@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "git_como_usar"
+name = "o mundo dos conteineres"
 version = "0.1.0"
 description = "Projeto de alunos da Univesp para aprender e compartilhar informações sobre o git"
 authors = ["Igor Esposito <sposigor@gmail.com>"]
