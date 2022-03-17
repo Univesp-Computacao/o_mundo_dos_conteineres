@@ -2,11 +2,11 @@
 
 >Você descreve um estado desejado em um Deployment e controla e altera o estado real para o estado desejado a uma taxa controlada. Você pode definir Deployment para criar novos ReplicaSets ou remover Deployment existentes e adotar todos os seus recursos com novas Deployment.
 
-Bem, para simplificar iremos criar um .yaml e passar no kind o Deployment, que vai criar um versionamento para a aplicação, porém ele engloba o ReplicaSets, passando o a quantidade de replicas.
+Bem, para simplificar iremos criar um .yaml e passar no kind o Deployment, que vai criar um versionamento para a aplicação, porém ele engloba o ReplicaSets, passando a quantidade de réplicas.
 
 ![deployment](https://i.postimg.cc/4xrtynDg/image.png){ loading=lazy }
 
-Para simplicar ainda mais é praticamente um ReplicaSet com versionamento.
+Para simplificar ainda mais é praticamente um ReplicaSet com versionamento.
 
 Crie o arquivo .yaml e vamos executar:
 
@@ -50,7 +50,7 @@ kubectl get deployment
 
 ## Versionamento
 
-Com o versionamento podemos, criar versões e depois podemos retorna se houve necessidade
+Com o versionamento podemos, criar versões e depois podemos retornar se houve necessidade
 
 === "Execute"
 
@@ -67,7 +67,7 @@ Com o versionamento podemos, criar versões e depois podemos retorna se houve ne
     1         <none>
     ```
 
-    Aqui no nosso historico está em none na versão 1
+    Aqui no nosso histórico está em none na versão 1
 
 
 Vou alterar a versão do **nginx:1.14.2** para **nginx:1** com o set.
@@ -76,7 +76,7 @@ Vou alterar a versão do **nginx:1.14.2** para **nginx:1** com o set.
 kubectl set image deployment/nginx-deployment nginx=nginx:1
 ```
 
-Em seguida vamos repetir o processo para verificar a revisão.
+Em seguida repetimos o processo para verificar a revisão.
 
 === "Execute"
 
@@ -110,15 +110,15 @@ REVISION  CHANGE-CAUSE
 2         alteração da imagem para a versão 1
 ```
 
-Lembrando que é importante você anotar sempre que mudar de versão.
+Lembrando é importante você anotar sempre que mudar de versão.
 
-E para retorna para alguma versão especifica:
+E para retorna para alguma versão específica:
 
 ```bash
 kubectl rollout undo deployment/nginx-deployment --to-revision=1
 ```
 
-## Escalando a quantidade de replicas
+## Escalando a quantidade de réplicas
 
 Para escalar é bem simples:
 
@@ -126,6 +126,6 @@ Para escalar é bem simples:
 kubectl scale deployment/nginx-deployment --replicas=10
 ```
 
-Usando o **scale** e com a flag **--replicas** definimos a quantidade de replicas.
+Usando o **scale** e com a flag **--replicas** definimos a quantidade de réplicas.
 
 Leia a [Documentação](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/){:target="_blank"} para ter mais informações.
