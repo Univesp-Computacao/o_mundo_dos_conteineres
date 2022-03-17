@@ -754,8 +754,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#balaceamento-de-carga" class="md-nav__link">
-    Balaceamento de Carga
+  <a href="#balanceamento-de-carga" class="md-nav__link">
+    Balanceamento de Carga
   </a>
   
 </li>
@@ -857,8 +857,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#balaceamento-de-carga" class="md-nav__link">
-    Balaceamento de Carga
+  <a href="#balanceamento-de-carga" class="md-nav__link">
+    Balanceamento de Carga
   </a>
   
 </li>
@@ -888,12 +888,12 @@
 </blockquote>
 <h2 id="_1"><img alt="replicaset" loading="lazy" src="https://i.postimg.cc/Vv6N76BH/image.png" /><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <h2 id="como-funciona-os-replicaset">Como funciona os ReplicaSet<a class="headerlink" href="#como-funciona-os-replicaset" title="Permanent link">&para;</a></h2>
-<p>Um ReplicaSet é definido com campos, incluindo um seletor que especifica como identificar os pods que ele pode adquirir, um número de réplicas indicando quantos pods ele deve manter e um modelo de pod especificando os dados dos novos pods que ele deve criar para atender ao número de critérios de réplicas. Um ReplicaSet cumpre sua finalidade criando e excluindo Pods conforme necessário para atingir o número desejado. Quando um ReplicaSet precisa criar novos pods, ele usa seu modelo de pod.</p>
-<p>Um ReplicaSet é vinculado a seus pods por meio do campo metadata.ownerReferences dos pods , que especifica de qual recurso o objeto atual pertence. Todos os Pods adquiridos por um ReplicaSet têm as informações de identificação de seu próprio ReplicaSet no campo ownerReferences. É por meio desse link que o ReplicaSet conhece o estado dos Pods que está mantendo e planeja de acordo.</p>
+<p>Um ReplicaSet é definido com campos, incluindo um seletor que especifica como identificar os pods que ele pode adquirir, um número de réplicas indicando quantos pods ele deve manter e um modelo de pod especificando os dados dos novos pods que ele deve criar para atender ao número de critérios de réplicas. Um ReplicaSet cumpre sua finalidade criando e excluindo Pods conforme necessário para atingir o número desejado. Quando um ReplicaSet precisa criar pods, ele usa seu modelo de pod.</p>
+<p>Um ReplicaSet é vinculado a seus pods por meio do campo metadata.ownerReferences dos pods, que especifica de qual recurso o objeto atual pertence. Todos os Pods adquiridos por um ReplicaSet têm as informações de identificação de seu próprio ReplicaSet no campo ownerReferences. É por meio desse link que o ReplicaSet conhece o estado dos Pods que está mantendo e planeja de acordo.</p>
 <p>Um ReplicaSet identifica novos pods a serem adquiridos usando seu seletor. Se houver um pod que não tenha OwnerReference ou OwnerReference não for um Controlador e corresponder ao seletor de um ReplicaSet, ele será imediatamente adquirido pelo referido ReplicaSet.</p>
 <hr />
 <h2 id="quando-usar-um-replicaset">Quando usar um ReplicaSet?<a class="headerlink" href="#quando-usar-um-replicaset" title="Permanent link">&para;</a></h2>
-<p>Um ReplicaSet garante que um número especificado de réplicas de pod esteja em execução a qualquer momento. No entanto, uma implantação é um conceito de nível superior que gerencia ReplicaSets e fornece atualizações declarativas para Pods junto com muitos outros recursos úteis. Portanto, recomendamos o uso de implantações em vez de usar diretamente ReplicaSets, a menos que você exija uma orquestração de atualização personalizada ou não exija nenhuma atualização.</p>
+<p>Um ReplicaSet garante que um número especificado de réplicas de pod esteja em execução a qualquer momento. No entanto, uma implantação é um conceito de nível superior que gerencia ReplicaSets e fornece atualizações declarativas para Pods com muitos outros recursos úteis. Portanto, recomendamos o uso de implantações em vez de usar diretamente ReplicaSets, a menos que você exija uma orquestração de atualização personalizada ou não exija nenhuma atualização.</p>
 <p>Na verdade, isso significa que talvez você nunca precise manipular objetos ReplicaSet: use um Deployment e defina seu aplicativo na seção spec.</p>
 <hr />
 <h2 id="configurando-o-replicaset">Configurando o replicaset<a class="headerlink" href="#configurando-o-replicaset" title="Permanent link">&para;</a></h2>
@@ -920,7 +920,7 @@
 <a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">php-redis</span><span class="w"></span>
 <a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">        </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gcr.io/google_samples/gb-frontend:v3</span><span class="w"></span>
 </code></pre></div>
-<p>Antes de continuar, precisamos entender melhor cada parte dessa configuração que foi feita.</p>
+<p>Antes de continuar, precisamos entender melhor cada parte dessa configuração feita.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Parte 1</label><label for="__tabbed_1_2">Parte 2</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -931,8 +931,8 @@
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">guestbook</span><span class="w"></span>
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="nt">tier</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">frontend</span><span class="w"></span>
 </code></pre></div>
-<p>Estamos passando para o <strong>kind</strong> o <strong>ReplicaSet</strong> para o kubernetes entender que é um serviço do tipo <strong>ReplicaSet</strong></p>
-<p>Em <strong>metadata</strong> mais especificamente no <strong>labels</strong> foi inserido o <strong>tier</strong> que é um nome para um conjuto, então imagine que tem varios PODs e ao inves de criar um <strong>matchLabels</strong> para cada app, criamos um <strong>tier</strong> e inserimos essa informação em todos os PODs desse conjuto, assim precisamos criar somente um <strong>ReplicaSet</strong> para todos esses PODs.</p>
+<p>Estamos passando para o <strong>kind</strong> o <strong>ReplicaSet</strong> para o kubernetes entender ser um serviço do tipo <strong>ReplicaSet</strong></p>
+<p>Em <strong>metadata</strong> mais especificamente no <strong>labels</strong> foi inserido o <strong>tier</strong> que é um nome para um conjunto, então imagine que tem varios PODs e ao invés de criar um <strong>matchLabels</strong> para cada app, criamos um <strong>tier</strong> e inserimos essa informação em todos os PODs desse conjunto, assim precisamos criar somente um <strong>ReplicaSet</strong> para todos esses PODs.</p>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">spec</span><span class="p">:</span><span class="w"></span>
@@ -950,7 +950,7 @@
 <a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">php-redis</span><span class="w"></span>
 <a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">        </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gcr.io/google_samples/gb-frontend:v3</span><span class="w"></span>
 </code></pre></div>
-<p><strong>replicas</strong> é a quantidade de PODs ideal para aplicação, mas também é a quantidade de PODs que sobem. Teremos um numero ideal de PODs a disponiveis e a quantidade de PODs que estão efetivamente disponiveis e nesse momento o <strong>ReplicaSet</strong> faz sua magica, que é a substituição automatica dos PODs que efetuamente cairem.</p>
+<p><strong>replicas</strong> é a quantidade de PODs ideal para aplicação, mas também é a quantidade de PODs que sobem. Teremos um número ideal de PODs disponíveis e a quantidade de PODs que estão efetivamente disponíveis e nesse momento o <strong>ReplicaSet</strong> faz sua mágica, sendo a substituição automática dos PODs que efetivamente caem.</p>
 <p><strong>selector</strong> estamos falando para ele procurar todos os PODs, do <strong>tier</strong> <strong>frontend</strong> para realizar o processo de monitorar, replicar e substituir.</p>
 <p><strong>template</strong> é o padrão que vai conter as informações do POD.</p>
 </div>
@@ -967,13 +967,13 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>NAME       DESIRED   CURRENT   READY   AGE
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>frontend   <span class="m">3</span>         <span class="m">3</span>         <span class="m">3</span>       3s
 </code></pre></div>
-<p>Temos o nome do <strong>ReplicaSet</strong> que criamos, a quantidade de <strong>Desired</strong> que é um numero desejado que foi informado em <strong>replicas</strong> o <strong>Current</strong> que é a informação sobre os PODs que estão normais e o <strong>Ready</strong> que está informando que estão todos ativos.</p>
+<p>Temos o nome do <strong>ReplicaSet</strong> que criamos, a quantidade de <strong>Desired</strong> que é um número desejado informado em <strong>replicas</strong> o <strong>Current</strong> que é a informação sobre os PODs que estão normais e o <strong>Ready</strong> que está informando que estão todos ativos.</p>
 <h3 id="testando-o-replicaset">Testando o ReplicaSet<a class="headerlink" href="#testando-o-replicaset" title="Permanent link">&para;</a></h3>
-<p>Com a mesma aplicação, veremos na pratica como ele funciona, primeiro abra dois terminas e deixe um do lado do outro.</p>
-<p>No primeiro vamos digitar o <strong>kubectl get rs</strong> e passar o parametro <strong>--watch</strong> para conseguimos verificar emn tempo real.</p>
+<p>Com a mesma aplicação, observaremos na prática como ele funciona, primeiro abra dois terminas e deixe um do lado do outro.</p>
+<p>No primeiro vamos digitar o <strong>kubectl get rs</strong> e passar o parâmetro <strong>--watch</strong> para conseguimos verificar em tempo real.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>kubectl get rs --watch
 </code></pre></div>
-<p>No outro terminal, faremos primeiro um <strong>kubectl get pod</strong> e em seguida <strong>kubectl delete pod</strong> e passe um dos PODs disponiveis.</p>
+<p>No outro terminal, faremos primeiro um <strong>kubectl get pod</strong> e em seguida <strong>kubectl delete pod</strong> e passe um dos PODs disponíveis.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">get pod</label><label for="__tabbed_2_2">delete</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1000,9 +1000,9 @@
 <a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>frontend   <span class="m">3</span>         <span class="m">3</span>         <span class="m">3</span>       8m51s
 </code></pre></div>
 <p>Aqui estamos vendo que o valor de <strong>Current</strong> e <strong>Ready</strong> tiveram mudança e em seguida retornaram ao valor original.</p>
-<p>Com isso nosso teste está concluido.</p>
-<h3 id="balaceamento-de-carga">Balaceamento de Carga<a class="headerlink" href="#balaceamento-de-carga" title="Permanent link">&para;</a></h3>
-<p>O <strong>ReplicaSet</strong> também se integra no balaceamento de carga, uma vez que o serviço pode ser distribuido igualmente pelas replicas disponiveis.</p>
+<p>Com isso nosso teste está concluído.</p>
+<h3 id="balanceamento-de-carga">Balanceamento de Carga<a class="headerlink" href="#balanceamento-de-carga" title="Permanent link">&para;</a></h3>
+<p>O <strong>ReplicaSet</strong> também se integra no balanceamento de carga, visto que o serviço pode ser distribuído igualmente pelas réplicas disponíveis.</p>
 <p>Para verificar mais informações consultar a <a href="https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/" target="_blank">Documentação</a></p>
 
               

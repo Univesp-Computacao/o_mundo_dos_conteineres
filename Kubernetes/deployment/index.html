@@ -740,7 +740,7 @@
       
         <li class="md-nav__item">
   <a href="#escalando-a-quantidade-de-replicas" class="md-nav__link">
-    Escalando a quantidade de replicas
+    Escalando a quantidade de réplicas
   </a>
   
 </li>
@@ -795,7 +795,7 @@
       
         <li class="md-nav__item">
   <a href="#escalando-a-quantidade-de-replicas" class="md-nav__link">
-    Escalando a quantidade de replicas
+    Escalando a quantidade de réplicas
   </a>
   
 </li>
@@ -818,9 +818,9 @@
 <blockquote>
 <p>Você descreve um estado desejado em um Deployment e controla e altera o estado real para o estado desejado a uma taxa controlada. Você pode definir Deployment para criar novos ReplicaSets ou remover Deployment existentes e adotar todos os seus recursos com novas Deployment.</p>
 </blockquote>
-<p>Bem, para simplificar iremos criar um .yaml e passar no kind o Deployment, que vai criar um versionamento para a aplicação, porém ele engloba o ReplicaSets, passando o a quantidade de replicas.</p>
+<p>Bem, para simplificar iremos criar um .yaml e passar no kind o Deployment, que vai criar um versionamento para a aplicação, porém ele engloba o ReplicaSets, passando a quantidade de réplicas.</p>
 <p><img alt="deployment" loading="lazy" src="https://i.postimg.cc/4xrtynDg/image.png" /></p>
-<p>Para simplicar ainda mais é praticamente um ReplicaSet com versionamento.</p>
+<p>Para simplificar ainda mais é praticamente um ReplicaSet com versionamento.</p>
 <p>Crie o arquivo .yaml e vamos executar:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">apps/v1</span><span class="w"></span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deployment</span><span class="w"></span>
@@ -852,7 +852,7 @@
 </code></pre></div>
 <hr />
 <h2 id="versionamento">Versionamento<a class="headerlink" href="#versionamento" title="Permanent link">&para;</a></h2>
-<p>Com o versionamento podemos, criar versões e depois podemos retorna se houve necessidade</p>
+<p>Com o versionamento podemos, criar versões e depois podemos retornar se houve necessidade</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Execute</label><label for="__tabbed_1_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -864,14 +864,14 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>REVISION  CHANGE-CAUSE
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="m">1</span>         &lt;none&gt;
 </code></pre></div>
-<p>Aqui no nosso historico está em none na versão 1</p>
+<p>Aqui no nosso histórico está em none na versão 1</p>
 </div>
 </div>
 </div>
 <p>Vou alterar a versão do <strong>nginx:1.14.2</strong> para <strong>nginx:1</strong> com o set.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>kubectl <span class="nb">set</span> image deployment/nginx-deployment <span class="nv">nginx</span><span class="o">=</span>nginx:1
 </code></pre></div>
-<p>Em seguida vamos repetir o processo para verificar a revisão.</p>
+<p>Em seguida repetimos o processo para verificar a revisão.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Execute</label><label for="__tabbed_2_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -896,15 +896,15 @@
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="m">1</span>         &lt;none&gt;
 <a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="m">2</span>         alteração da imagem para a versão <span class="m">1</span>
 </code></pre></div>
-<p>Lembrando que é importante você anotar sempre que mudar de versão.</p>
-<p>E para retorna para alguma versão especifica:</p>
+<p>Lembrando é importante você anotar sempre que mudar de versão.</p>
+<p>E para retorna para alguma versão específica:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>kubectl rollout undo deployment/nginx-deployment --to-revision<span class="o">=</span><span class="m">1</span>
 </code></pre></div>
-<h2 id="escalando-a-quantidade-de-replicas">Escalando a quantidade de replicas<a class="headerlink" href="#escalando-a-quantidade-de-replicas" title="Permanent link">&para;</a></h2>
+<h2 id="escalando-a-quantidade-de-replicas">Escalando a quantidade de réplicas<a class="headerlink" href="#escalando-a-quantidade-de-replicas" title="Permanent link">&para;</a></h2>
 <p>Para escalar é bem simples:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>kubectl scale deployment/nginx-deployment --replicas<span class="o">=</span><span class="m">10</span>
 </code></pre></div>
-<p>Usando o <strong>scale</strong> e com a flag <strong>--replicas</strong> definimos a quantidade de replicas.</p>
+<p>Usando o <strong>scale</strong> e com a flag <strong>--replicas</strong> definimos a quantidade de réplicas.</p>
 <p>Leia a <a href="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/" target="_blank">Documentação</a> para ter mais informações.</p>
 
               
