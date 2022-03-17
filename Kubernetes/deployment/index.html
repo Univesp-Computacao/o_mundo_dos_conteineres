@@ -896,6 +896,7 @@
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="m">1</span>         &lt;none&gt;
 <a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="m">2</span>         alteração da imagem para a versão <span class="m">1</span>
 </code></pre></div>
+<p>Lembrando que é importante você anotar sempre que mudar de versão.</p>
 <p>E para retorna para alguma versão especifica:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>kubectl rollout undo deployment/nginx-deployment --to-revision<span class="o">=</span><span class="m">1</span>
 </code></pre></div>
@@ -904,6 +905,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>kubectl scale deployment/nginx-deployment --replicas<span class="o">=</span><span class="m">10</span>
 </code></pre></div>
 <p>Usando o <strong>scale</strong> e com a flag <strong>--replicas</strong> definimos a quantidade de replicas.</p>
+<p>Leia a <a href="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/" target="_blank">Documentação</a> para ter mais informações.</p>
 
               
             </article>
