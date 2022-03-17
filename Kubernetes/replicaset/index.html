@@ -13,7 +13,7 @@
     
     
       
-        <title>O que é Kubernetes - Univesp por Estudantes</title>
+        <title>ReplicaSet - Univesp por Estudantes</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#o-que-e-kubernetes" class="md-skip">
+        <a href="#replicaset" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              O que é Kubernetes
+              ReplicaSet
             
           </span>
         </div>
@@ -248,7 +248,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../o%20que%20%C3%A9%20kubernetes/" class="md-tabs__link md-tabs__link--active">
         Kubernetes
       </a>
     </li>
@@ -626,80 +626,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          O que é Kubernetes
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../o%20que%20%C3%A9%20kubernetes/" class="md-nav__link">
         O que é Kubernetes
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Indice">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Indice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#por-que-voce-precisa-do-kubernetes-e-o-que-ele-pode-fazer" class="md-nav__link">
-    Por que você precisa do Kubernetes e o que ele pode fazer
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#o-que-o-kubernetes-nao-e" class="md-nav__link">
-    O que o Kubernetes não é
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kubernetes-como-ele-funciona" class="md-nav__link">
-    Kubernetes: como ele funciona?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-ele-se-encaixa-na-infraestrutura" class="md-nav__link">
-    Como ele se encaixa na infraestrutura?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fontes-usadas-para-elaboracao-desse-conteudo" class="md-nav__link">
-    Fontes usadas para elaboração desse conteúdo
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -751,11 +682,93 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../replicaset/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ReplicaSet
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         ReplicaSet
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-funciona-os-replicaset" class="md-nav__link">
+    Como funciona os ReplicaSet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quando-usar-um-replicaset" class="md-nav__link">
+    Quando usar um ReplicaSet?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurando-o-replicaset" class="md-nav__link">
+    Configurando o replicaset
+  </a>
+  
+    <nav class="md-nav" aria-label="Configurando o replicaset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#testando-o-replicaset" class="md-nav__link">
+    Testando o ReplicaSet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#balaceamento-de-carga" class="md-nav__link">
+    Balaceamento de Carga
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -808,37 +821,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#por-que-voce-precisa-do-kubernetes-e-o-que-ele-pode-fazer" class="md-nav__link">
-    Por que você precisa do Kubernetes e o que ele pode fazer
+  <a href="#_1" class="md-nav__link">
+    
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#o-que-o-kubernetes-nao-e" class="md-nav__link">
-    O que o Kubernetes não é
+  <a href="#como-funciona-os-replicaset" class="md-nav__link">
+    Como funciona os ReplicaSet
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#kubernetes-como-ele-funciona" class="md-nav__link">
-    Kubernetes: como ele funciona?
+  <a href="#quando-usar-um-replicaset" class="md-nav__link">
+    Quando usar um ReplicaSet?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#como-ele-se-encaixa-na-infraestrutura" class="md-nav__link">
-    Como ele se encaixa na infraestrutura?
+  <a href="#configurando-o-replicaset" class="md-nav__link">
+    Configurando o replicaset
+  </a>
+  
+    <nav class="md-nav" aria-label="Configurando o replicaset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#testando-o-replicaset" class="md-nav__link">
+    Testando o ReplicaSet
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#fontes-usadas-para-elaboracao-desse-conteudo" class="md-nav__link">
-    Fontes usadas para elaboração desse conteúdo
+        
+          <li class="md-nav__item">
+  <a href="#balaceamento-de-carga" class="md-nav__link">
+    Balaceamento de Carga
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -856,70 +882,128 @@
                 
 
 
-<h1 id="o-que-e-kubernetes">O que é Kubernetes?<a class="headerlink" href="#o-que-e-kubernetes" title="Permanent link">&para;</a></h1>
-<p>Para acessar o repositorio <a href="https://github.com/kubernetes/kubernetes" target="_blank">Github Kubernetes</a> e o <a href="https://kubernetes.io/pt-br/" target="_blank">Kubernetes.io</a></p>
-<p>O Google tornou Kubernetes um projeto de código-aberto em 2014. O Kubernetes combina mais de 15 anos de experiência do Google executando cargas de trabalho produtivas em escala, com as melhores idéias e práticas da comunidade.</p>
-<p>Kubernetes é um plataforma de código aberto, portável e extensiva para o gerenciamento de cargas de trabalho e serviços distribuídos em contêineres, que facilita tanto a configuração declarativa quanto a automação. Ele possui um ecossistema grande, e de rápido crescimento. Serviços, suporte, e ferramentas para Kubernetes estão amplamente disponíveis.</p>
-<p><img alt="Logo Kubernete" loading="lazy" src="https://cloudoki.com/content/images/2020/07/Kubernetes-Logo.wine.png" /></p>
-<p>O Kubernetes veio com grande experiência da Google e não para de crescer nas funcionalidades e usuários. É ele quem gerencia os containers em execução e por isso ele também é chamado de Orquestrador de Containers. Através dele podemos definir o estado de um sistema completo, por exemplo baseado em Microservices, seguindo boas práticas de infraestrutura como código, permitindo balanceamento de carga, alta disponibilidade, atualizações em lote e rollbacks e muito muito mais.</p>
-<p>Hoje em dia os grandes provedores de nuvem como Azure, AWS, IBM, Red Hat, Oracle ou Google dão suporte ao Kubernetes. Além disso, existe uma implementação local chamada de Minikube que simula um cluster Kubernetes, ideal para testes e estudos. O mais legal é que as configurações locais, que definem o estado da aplicação, também rodam no Kubernetes na nuvem. Ou seja, podemos testar o orquestrador local usando Minikube e depois publicar o sistema no AWS ou Azure, apenas com poucas alterações.</p>
+<h1 id="replicaset">ReplicaSet<a class="headerlink" href="#replicaset" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>A finalidade de um ReplicaSet é manter um conjunto estável de pods de réplica em execução a qualquer momento. Como tal, é frequentemente usado para garantir a disponibilidade de um número especificado de Pods idênticos.</p>
+</blockquote>
+<h2 id="_1"><img alt="replicaset" loading="lazy" src="https://i.postimg.cc/Vv6N76BH/image.png" /><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="como-funciona-os-replicaset">Como funciona os ReplicaSet<a class="headerlink" href="#como-funciona-os-replicaset" title="Permanent link">&para;</a></h2>
+<p>Um ReplicaSet é definido com campos, incluindo um seletor que especifica como identificar os pods que ele pode adquirir, um número de réplicas indicando quantos pods ele deve manter e um modelo de pod especificando os dados dos novos pods que ele deve criar para atender ao número de critérios de réplicas. Um ReplicaSet cumpre sua finalidade criando e excluindo Pods conforme necessário para atingir o número desejado. Quando um ReplicaSet precisa criar novos pods, ele usa seu modelo de pod.</p>
+<p>Um ReplicaSet é vinculado a seus pods por meio do campo metadata.ownerReferences dos pods , que especifica de qual recurso o objeto atual pertence. Todos os Pods adquiridos por um ReplicaSet têm as informações de identificação de seu próprio ReplicaSet no campo ownerReferences. É por meio desse link que o ReplicaSet conhece o estado dos Pods que está mantendo e planeja de acordo.</p>
+<p>Um ReplicaSet identifica novos pods a serem adquiridos usando seu seletor. Se houver um pod que não tenha OwnerReference ou OwnerReference não for um Controlador e corresponder ao seletor de um ReplicaSet, ele será imediatamente adquirido pelo referido ReplicaSet.</p>
 <hr />
-<h2 id="por-que-voce-precisa-do-kubernetes-e-o-que-ele-pode-fazer">Por que você precisa do Kubernetes e o que ele pode fazer<a class="headerlink" href="#por-que-voce-precisa-do-kubernetes-e-o-que-ele-pode-fazer" title="Permanent link">&para;</a></h2>
-<p>Os contêineres são uma boa maneira de agrupar e executar suas aplicações. Em um ambiente de produção, você precisa gerenciar os contêineres que executam as aplicações e garantir que não haja tempo de inatividade. Por exemplo, se um contêiner cair, outro contêiner precisa ser iniciado. Não seria mais fácil se esse comportamento fosse controlado por um sistema?</p>
-<p>É assim que o Kubernetes vem ao resgate! O Kubernetes oferece uma estrutura para executar sistemas distribuídos de forma resiliente. Ele cuida do escalonamento e do recuperação à falha de sua aplicação, fornece padrões de implantação e muito mais. Por exemplo, o Kubernetes pode gerenciar facilmente uma implantação no método canário para seu sistema.</p>
-<p>O Kubernetes oferece a você:</p>
-<ul>
-<li>Descoberta de serviço e balanceamento de carga O Kubernetes pode expor um contêiner usando o nome DNS ou seu próprio endereço IP. Se o tráfego para um contêiner for alto, o Kubernetes pode balancear a carga e distribuir o tráfego de rede para que a implantação seja estável.</li>
-<li>Orquestração de armazenamento O Kubernetes permite que você monte automaticamente um sistema de armazenamento de sua escolha, como armazenamentos locais, provedores de nuvem pública e muito mais.</li>
-<li>Lançamentos e reversões automatizadas Você pode descrever o estado desejado para seus contêineres implantados usando o Kubernetes, e ele pode alterar o estado real para o estado desejado em um ritmo controlada. Por exemplo, você pode automatizar o Kubernetes para criar novos contêineres para sua implantação, remover os contêineres existentes e adotar todos os seus recursos para o novo contêiner.</li>
-<li>Empacotamento binário automático Você fornece ao Kubernetes um cluster de nós que pode ser usado para executar tarefas nos contêineres. Você informa ao Kubernetes de quanta CPU e memória (RAM) cada contêiner precisa. O Kubernetes pode encaixar contêineres em seus nós para fazer o melhor uso de seus recursos.</li>
-<li>Autocorreção O Kubernetes reinicia os contêineres que falham, substitui os contêineres, elimina os contêineres que não respondem à verificação de integridade definida pelo usuário e não os anuncia aos clientes até que estejam prontos para servir.</li>
-<li>Gerenciamento de configuração e de segredos O Kubernetes permite armazenar e gerenciar informações confidenciais, como senhas, tokens OAuth e chaves SSH. Você pode implantar e atualizar segredos e configuração de aplicações sem reconstruir suas imagens de contêiner e sem expor segredos em sua pilha de configuração.</li>
-</ul>
+<h2 id="quando-usar-um-replicaset">Quando usar um ReplicaSet?<a class="headerlink" href="#quando-usar-um-replicaset" title="Permanent link">&para;</a></h2>
+<p>Um ReplicaSet garante que um número especificado de réplicas de pod esteja em execução a qualquer momento. No entanto, uma implantação é um conceito de nível superior que gerencia ReplicaSets e fornece atualizações declarativas para Pods junto com muitos outros recursos úteis. Portanto, recomendamos o uso de implantações em vez de usar diretamente ReplicaSets, a menos que você exija uma orquestração de atualização personalizada ou não exija nenhuma atualização.</p>
+<p>Na verdade, isso significa que talvez você nunca precise manipular objetos ReplicaSet: use um Deployment e defina seu aplicativo na seção spec.</p>
 <hr />
-<h2 id="o-que-o-kubernetes-nao-e">O que o Kubernetes não é<a class="headerlink" href="#o-que-o-kubernetes-nao-e" title="Permanent link">&para;</a></h2>
-<p>O Kubernetes não é um sistema PaaS (plataforma como serviço) tradicional e completo. Como o Kubernetes opera no nível do contêiner, e não no nível do hardware, ele fornece alguns recursos geralmente aplicáveis comuns às ofertas de PaaS, como implantação, escalonamento, balanceamento de carga, e permite que os usuários integrem suas soluções de logging, monitoramento e alerta. No entanto, o Kubernetes não é monolítico, e essas soluções padrão são opcionais e conectáveis. O Kubernetes fornece os blocos de construção para a construção de plataformas de desenvolvimento, mas preserva a escolha e flexibilidade do usuário onde é importante.</p>
-<p>Kubernetes:</p>
-<ul>
-<li>Não limita os tipos de aplicações suportadas. O Kubernetes visa oferecer suporte a uma variedade extremamente diversa de cargas de trabalho, incluindo cargas de trabalho sem estado, com estado e de processamento de dados. Se uma aplicação puder ser executada em um contêiner, ele deve ser executado perfeitamente no Kubernetes.</li>
-<li>Não implanta código-fonte e não constrói sua aplicação. Os fluxos de trabalho de integração contínua, entrega e implantação (CI/CD) são determinados pelas culturas e preferências da organização, bem como pelos requisitos técnicos.</li>
-<li>Não fornece serviços em nível de aplicação, tais como middleware (por exemplo, barramentos de mensagem), estruturas de processamento de dados (por exemplo, Spark), bancos de dados (por exemplo, MySQL), caches, nem sistemas de armazenamento em cluster (por exemplo, Ceph), como serviços integrados. Esses componentes podem ser executados no Kubernetes e/ou podem ser acessados por aplicações executadas no Kubernetes por meio de mecanismos portáteis, como o Open Service Broker.</li>
-<li>Não dita soluções de logging, monitoramento ou alerta. Ele fornece algumas integrações como prova de conceito e mecanismos para coletar e exportar métricas.</li>
-<li>Não fornece nem exige um sistema/idioma de configuração (por exemplo, Jsonnet). Ele fornece uma API declarativa que pode ser direcionada por formas arbitrárias de especificações declarativas.</li>
-<li>Não fornece nem adota sistemas abrangentes de configuração de máquinas, manutenção, gerenciamento ou autocorreção.</li>
-<li>Adicionalmente, o Kubernetes não é um mero sistema de orquestração. Na verdade, ele elimina a necessidade de orquestração. A definição técnica de orquestração é a execução de um fluxo de trabalho definido: primeiro faça A, depois B e depois C. Em contraste, o Kubernetes compreende um conjunto de processos de controle independentes e combináveis que conduzem continuamente o estado atual em direção ao estado desejado fornecido. Não importa como você vai de A para C. O controle centralizado também não é necessário. Isso resulta em um sistema que é mais fácil de usar e mais poderoso, robusto, resiliente e extensível.</li>
-</ul>
+<h2 id="configurando-o-replicaset">Configurando o replicaset<a class="headerlink" href="#configurando-o-replicaset" title="Permanent link">&para;</a></h2>
+<p>Vamos usar o exemplo disponivel na documentação:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">apps/v1</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ReplicaSet</span><span class="w"></span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">frontend</span><span class="w"></span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">labels</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">guestbook</span><span class="w"></span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nt">tier</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">frontend</span><span class="w"></span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nt">spec</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="c1"># modify replicas according to your case</span><span class="w"></span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">replicas</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span><span class="w"></span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="nt">selector</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">      </span><span class="nt">tier</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">frontend</span><span class="w"></span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="nt">template</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">      </span><span class="nt">labels</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">        </span><span class="nt">tier</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">frontend</span><span class="w"></span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="nt">spec</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">      </span><span class="nt">containers</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">php-redis</span><span class="w"></span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">        </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gcr.io/google_samples/gb-frontend:v3</span><span class="w"></span>
+</code></pre></div>
+<p>Antes de continuar, precisamos entender melhor cada parte dessa configuração que foi feita.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Parte 1</label><label for="__tabbed_1_2">Parte 2</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ReplicaSet</span><span class="w"></span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">frontend</span><span class="w"></span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nt">labels</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">guestbook</span><span class="w"></span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="nt">tier</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">frontend</span><span class="w"></span>
+</code></pre></div>
+<p>Estamos passando para o <strong>kind</strong> o <strong>ReplicaSet</strong> para o kubernetes entender que é um serviço do tipo <strong>ReplicaSet</strong></p>
+<p>Em <strong>metadata</strong> mais especificamente no <strong>labels</strong> foi inserido o <strong>tier</strong> que é um nome para um conjuto, então imagine que tem varios PODs e ao inves de criar um <strong>matchLabels</strong> para cada app, criamos um <strong>tier</strong> e inserimos essa informação em todos os PODs desse conjuto, assim precisamos criar somente um <strong>ReplicaSet</strong> para todos esses PODs.</p>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">spec</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="c1"># modify replicas according to your case</span><span class="w"></span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nt">replicas</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span><span class="w"></span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nt">selector</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">      </span><span class="nt">tier</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">frontend</span><span class="w"></span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="nt">template</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">      </span><span class="nt">labels</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="nt">tier</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">frontend</span><span class="w"></span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="nt">spec</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">      </span><span class="nt">containers</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">php-redis</span><span class="w"></span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">        </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gcr.io/google_samples/gb-frontend:v3</span><span class="w"></span>
+</code></pre></div>
+<p><strong>replicas</strong> é a quantidade de PODs ideal para aplicação, mas também é a quantidade de PODs que sobem. Teremos um numero ideal de PODs a disponiveis e a quantidade de PODs que estão efetivamente disponiveis e nesse momento o <strong>ReplicaSet</strong> faz sua magica, que é a substituição automatica dos PODs que efetuamente cairem.</p>
+<p><strong>selector</strong> estamos falando para ele procurar todos os PODs, do <strong>tier</strong> <strong>frontend</strong> para realizar o processo de monitorar, replicar e substituir.</p>
+<p><strong>template</strong> é o padrão que vai conter as informações do POD.</p>
+</div>
+</div>
+</div>
 <hr />
-<h2 id="kubernetes-como-ele-funciona">Kubernetes: como ele funciona?<a class="headerlink" href="#kubernetes-como-ele-funciona" title="Permanent link">&para;</a></h2>
-<p>A principal vantagem que as empresas garantem ao usar o Kubernetes, especialmente se estiverem otimizando o desenvolvimento de aplicações para a cloud, é que elas terão uma plataforma para programar e executar containers em clusters de máquinas físicas ou virtuais. Em termos mais abrangentes, com o Kubernetes, é mais fácil implementar e confiar totalmente em uma infraestrutura baseada em containers para os ambientes de produção. Como o propósito do Kubernetes é automatizar completamente as tarefas operacionais, ele permite que os containers realizem muitas das tarefas possibilitadas por outros sistemas de gerenciamento ou plataformas de aplicações.</p>
-<p>O Kubernetes possibilita:</p>
-<ul>
-<li>Orquestrar containers em vários hosts.</li>
-<li>Aproveitar melhor o hardware para maximizar os recursos necessários na execução das aplicações corporativas.</li>
-<li>Controlar e automatizar as implantações e atualizações de aplicações.</li>
-<li>Montar e adicionar armazenamento para executar aplicações com monitoração de estado.</li>
-<li>Escalar rapidamente as aplicações em containers e recursos relacionados.</li>
-<li>Gerenciar serviços de forma declarativa, garantindo que as aplicações sejam executadas sempre da mesma maneira como foram implantadas.</li>
-<li>Verificar a integridade e autorrecuperação das aplicações com posicionamento, reinício, replicação e escalonamento automáticos.</li>
-</ul>
-<p>No entanto, o Kubernetes depende de outros projetos para oferecer plenamente esses serviços orquestrados. Com a inclusão de outros projetos open source, é possível atingir a capacidade total do Kubernetes. Dentre esses projetos necessários, incluem-se:</p>
-<ul>
-<li>Registro, como o Atomic Registry ou o Docker Registry.</li>
-<li>Rede, como o OpenvSwitch e roteamento de borda inteligente.</li>
-<li>Telemetria, como o heapster, o kibana, o hawkular e o elastic.</li>
-<li>Segurança, como o LDAP, o SELinux, o RBAC e o OAUTH com camadas de multilocação.</li>
-<li>Automação, com a adição de playbooks do Ansible para a instalação e o gerenciamento do ciclo de vida do cluster.</li>
-<li>Serviços, oferecidos em um catálogo variado de conteúdos previamente criados de padrões de aplicações populares.</li>
-</ul>
-<hr />
-<h2 id="como-ele-se-encaixa-na-infraestrutura">Como ele se encaixa na infraestrutura?<a class="headerlink" href="#como-ele-se-encaixa-na-infraestrutura" title="Permanent link">&para;</a></h2>
-<p><img alt="devops" loading="lazy" src="https://i.postimg.cc/L6RNMq2x/image.png" /></p>
-<p>O Kubernetes é executado em um sistema operacional e interage com pods de containers executados em nós. A máquina mestre do Kubernetes aceita os comandos de um administrador (ou equipe de DevOps) e retransmite essas instruções aos nós subservientes. Essa retransmissão é realizada em conjunto com vários serviços para automaticamente decidir qual nó é o mais adequado para a tarefa. Depois, são alocados os recursos e atribuídos os pods do nó para cumprir a tarefa solicitada.</p>
-<p>Portanto, do ponto de vista da infraestrutura, são poucas as mudanças em comparação com a forma como você já gerencia os containers. O controle sobre os containers acontece em um nível superior, tornando-o mais refinado, sem a necessidade de microgerenciar cada container ou nó separadamente. Será necessário realizar algum trabalho, mas em sua maioria trata-se somente de uma questão de atribuir um master do Kubernetes e definir os nós e pods.</p>
-<hr />
-<h2 id="fontes-usadas-para-elaboracao-desse-conteudo">Fontes usadas para elaboração desse conteúdo<a class="headerlink" href="#fontes-usadas-para-elaboracao-desse-conteudo" title="Permanent link">&para;</a></h2>
-<p><a href="https://kubernetes.io/pt-br/docs/concepts/overview/what-is-kubernetes/" target="_blank">Documentação Kubernete</a></p>
-<p><a href="https://www.redhat.com/pt-br/topics/containers/what-is-kubernetes" target="_blank">Red Hat</a></p>
+<p>Com isso, basta criar o arquivo.yaml e executar.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>kubectl apply -f replicas.yaml
+</code></pre></div>
+<p>Ele vai executar o comando e vamos verificar:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>kubectl get rs
+</code></pre></div>
+<p>Saida:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>NAME       DESIRED   CURRENT   READY   AGE
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>frontend   <span class="m">3</span>         <span class="m">3</span>         <span class="m">3</span>       3s
+</code></pre></div>
+<p>Temos o nome do <strong>ReplicaSet</strong> que criamos, a quantidade de <strong>Desired</strong> que é um numero desejado que foi informado em <strong>replicas</strong> o <strong>Current</strong> que é a informação sobre os PODs que estão normais e o <strong>Ready</strong> que está informando que estão todos ativos.</p>
+<h3 id="testando-o-replicaset">Testando o ReplicaSet<a class="headerlink" href="#testando-o-replicaset" title="Permanent link">&para;</a></h3>
+<p>Com a mesma aplicação, veremos na pratica como ele funciona, primeiro abra dois terminas e deixe um do lado do outro.</p>
+<p>No primeiro vamos digitar o <strong>kubectl get rs</strong> e passar o parametro <strong>--watch</strong> para conseguimos verificar emn tempo real.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>kubectl get rs --watch
+</code></pre></div>
+<p>No outro terminal, faremos primeiro um <strong>kubectl get pod</strong> e em seguida <strong>kubectl delete pod</strong> e passe um dos PODs disponiveis.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">get pod</label><label for="__tabbed_2_2">delete</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>kubectl get pod
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>NAME             READY   STATUS    RESTARTS   AGE
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>frontend-hvvnp   <span class="m">1</span>/1     Running   <span class="m">0</span>          6m53s
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>frontend-t4l87   <span class="m">1</span>/1     Running   <span class="m">0</span>          6m53s
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>frontend-xqfsq   <span class="m">1</span>/1     Running   <span class="m">0</span>          6m53s
+</code></pre></div>
+<p>Vou usar o <strong>frontend-hvvnp</strong> para o delete</p>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>kubectl delete pod frontend-hvvnp
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>Após concluir o procedimento, perceba que o outro terminal teve uma alteração:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>NAME       DESIRED   CURRENT   READY   AGE
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>frontend   <span class="m">3</span>         <span class="m">3</span>         <span class="m">3</span>       8m18s
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>frontend   <span class="m">3</span>         <span class="m">2</span>         <span class="m">2</span>       8m50s
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>frontend   <span class="m">3</span>         <span class="m">3</span>         <span class="m">2</span>       8m50s
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>frontend   <span class="m">3</span>         <span class="m">3</span>         <span class="m">3</span>       8m51s
+</code></pre></div>
+<p>Aqui estamos vendo que o valor de <strong>Current</strong> e <strong>Ready</strong> tiveram mudança e em seguida retornaram ao valor original.</p>
+<p>Com isso nosso teste está concluido.</p>
+<h3 id="balaceamento-de-carga">Balaceamento de Carga<a class="headerlink" href="#balaceamento-de-carga" title="Permanent link">&para;</a></h3>
+<p>O <strong>ReplicaSet</strong> também se integra no balaceamento de carga, uma vez que o serviço pode ser distribuido igualmente pelas replicas disponiveis.</p>
+<p>Para verificar mais informações consultar a <a href="https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/" target="_blank">Documentação</a></p>
 
               
             </article>
@@ -933,7 +1017,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Rodapé">
       
         
-        <a href="../../docker%20swarm/docker%20stack/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Docker Stack" rel="prev">
+        <a href="../projeto/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Projeto" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -942,20 +1026,20 @@
               <span class="md-footer__direction">
                 Anterior
               </span>
-              Docker Stack
+              Projeto
             </div>
           </div>
         </a>
       
       
         
-        <a href="../instala%C3%A7%C3%A3o/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Instalação" rel="next">
+        <a href="../deployment/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Deployment" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Próximo
               </span>
-              Instalação
+              Deployment
             </div>
           </div>
           <div class="md-footer__button md-icon">
