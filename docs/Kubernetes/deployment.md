@@ -1,6 +1,6 @@
 # Deployment
 
->Você descreve um estado desejado em um Deployment e a Deployment controla e altera o estado real para o estado desejado a uma taxa controlada. Você pode definir Deployment para criar novos ReplicaSets ou remover Deployment existentes e adotar todos os seus recursos com novas Deployment.
+>Você descreve um estado desejado em um Deployment e controla e altera o estado real para o estado desejado a uma taxa controlada. Você pode definir Deployment para criar novos ReplicaSets ou remover Deployment existentes e adotar todos os seus recursos com novas Deployment.
 
 Bem, para simplificar iremos criar um .yaml e passar no kind o Deployment, que vai criar um versionamento para a aplicação, porém ele engloba o ReplicaSets, passando o a quantidade de replicas.
 
