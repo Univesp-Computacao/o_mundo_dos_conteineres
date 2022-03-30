@@ -4,9 +4,9 @@ Vou deixa algumas recomendações para entender qual os proximos passos que pode
 
 ## Para revisar
 
-[Docker em 120 - LinuxTips](https://www.youtube.com/watch?v=MeFyp4VnNx0)
+[Docker em 120 - LinuxTips](https://www.youtube.com/watch?v=MeFyp4VnNx0){:target="_blank"}
 
-[Docker em 7 passos - Fireship](https://www.youtube.com/watch?v=gAkwW2tuIqE)
+[Docker em 7 passos - Fireship](https://www.youtube.com/watch?v=gAkwW2tuIqE){:target="_blank"}
 
 ## Para Acompanhar
 
@@ -14,7 +14,7 @@ A alguns anos um evento chamado DockerCon, começou a ser realizado anualmente, 
 
 Vou deixa a DockerCon 2021 aqui como referencia do evento:
 
-[DockerCon 2021: Sala Brasil](https://www.youtube.com/playlist?list=PLnOICPAPShyR3qHUor6AnEIl_w5o1g3by)
+[DockerCon 2021: Sala Brasil](https://www.youtube.com/playlist?list=PLnOICPAPShyR3qHUor6AnEIl_w5o1g3by){:target="_blank"}
 
 ## Para Aplicar
 
