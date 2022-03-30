@@ -109,10 +109,16 @@ Nesse tema vamos aborda sobre e praticar:
 + [x] Docker 100%
     + [x] Docker Swarm: Cluster do Docker 100%
     + [ ] Usar o Vagrant para criação da infraestrutura do Swarm 0%
-+ [ ] Kubernetes 60%
++ [ ] Kubernetes 80%
+    + [ ] Persistir Dados
+    + [ ] Liveness, Readiness e Probes
+    + [ ] Escalar a aplicação
 + [ ] Amazon Kubernetes 0%
 + [ ] Azure Kubernetes 0%
 + [ ] GCP Kubernetes 0%
+    + [ ] API do Registry
+    + [ ] Cluster AutoPilot e Standard
+    + [ ] Log e Monitoramento
 
 ----
 

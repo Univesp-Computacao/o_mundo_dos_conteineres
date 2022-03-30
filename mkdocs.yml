@@ -121,6 +121,7 @@ nav:
     - Gerenciamento de Dados: docker/volumes.md
     - Rede: docker/redes.md
     - Docker Compose: docker/compose.md
+    - Proximos Passos: docker/aprende_mais.md
   - Docker Swarm:
     - O que é Swarm?: docker swarm/o que é swarm.md
     - Iniciando o Swarm: docker swarm/iniciando o swarm.md

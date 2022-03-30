@@ -120,5 +120,3 @@ Para exemplificar o docker não encontrou a imagem local e baixou de um reposit�
 
 ??? note "Espiar a resposta"
     O repositório com as imagens é o Docker Hub.
-
-
