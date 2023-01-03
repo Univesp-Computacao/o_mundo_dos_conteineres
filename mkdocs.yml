@@ -99,8 +99,6 @@ markdown_extensions:
 # Customização
 extra:
   analytics:
-        name: Google Analytics
-        checked: True
         provider: google
         property: G-31BRSLXRM1
   consent:
