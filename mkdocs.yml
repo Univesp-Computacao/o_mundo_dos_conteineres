@@ -1,4 +1,4 @@
-site_name: Univesp por Estudantes
+site_name: Univesp por Estudantes - Portal Docker
 
 repo_name: Univesp-Computacao/o_mundo_dos_conteineres
 repo_url: https://github.com/Univesp-Computacao/o_mundo_dos_conteineres
@@ -98,17 +98,16 @@ markdown_extensions:
 
 # Customização
 extra:
+  analytics:
+        name: Google Analytics
+        checked: True
+        provider: google
+        property: G-31BRSLXRM1
   consent:
     title: Cookie consent
     description: >- 
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
-    cookies:
-      analytics:
-        name: Google Analytics
-        checked: True
+      Usamos cookies para reconhecer suas visitas repetidas e preferências. Com o seu consentimento, você está nos ajudando a
+       tornar nossa documentação melhor.
 
 # tree da pagina
 nav:
