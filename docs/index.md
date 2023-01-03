@@ -45,10 +45,7 @@ Já que sabemos a diferença entre VM e Contêineres, precisamos entender aonde 
 
 ## Se aprofundando um pouco mais nos Contêineres
 
-Se em algum momento você já usou uma VM, imagino que tenha passado pelo processo de baixa uma SO, seja Linux ou Windows e alocando os recursos conforme a capacidade do hardware disponível, então esse processo dos Contêineres pode parecer meio confuso, para isso deixei duas perguntas que precisamos responder antes de contínua.
-
-+ Se não é uma virtualização como ocorre o isolamento?
-+ Como ocorre a divisão de recursos?
+Se em algum momento você já usou uma VM, imagino que tenha passado pelo processo de baixar uma SO, seja Linux ou Windows e alocando os recursos conforme a capacidade do hardware disponível, então esse processo dos Contêineres pode parecer meio confuso, para isso deixei duas perguntas que precisamos responder antes de continuar.
 
 ### Se não é uma virtualização como ocorre o isolamento?
 
