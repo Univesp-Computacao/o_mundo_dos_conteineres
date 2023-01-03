@@ -8,21 +8,28 @@
       
       
       
+      
+        <link rel="prev" href="../iniciando%20o%20swarm/">
+      
+      
+        <link rel="next" href="../ingress/">
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.1">
     
     
       
-        <title>Serviço - Univesp por Estudantes</title>
+        <title>Serviço - Univesp por Estudantes - Portal Docker</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.120efc48.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3bd4f189.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.9647289d.min.css">
-        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
       
+      
+
     
     
     
@@ -35,10 +42,23 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
 
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-31BRSLXRM1"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-31BRSLXRM1",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-31BRSLXRM1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
     
     
   </head>
@@ -77,7 +97,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="../.." title="Univesp por Estudantes" class="md-header__button md-logo" aria-label="Univesp por Estudantes" data-md-component="logo">
+    <a href="../.." title="Univesp por Estudantes - Portal Docker" class="md-header__button md-logo" aria-label="Univesp por Estudantes - Portal Docker" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -90,7 +110,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Univesp por Estudantes
+            Univesp por Estudantes - Portal Docker
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -106,7 +126,6 @@
       <form class="md-header__option" data-md-component="palette">
         
           
-          
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="yellow"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
@@ -114,7 +133,6 @@
             </label>
           
         
-          
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
           
@@ -141,11 +159,11 @@
       </label>
       <nav class="md-search__options" aria-label="Pesquisar">
         
-          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
           </a>
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Limpar" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -171,7 +189,7 @@
         <a href="https://github.com/Univesp-Computacao/o_mundo_dos_conteineres" title="Ir para repositório" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     Univesp-Computacao/o_mundo_dos_conteineres
@@ -276,20 +294,20 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Univesp por Estudantes" class="md-nav__button md-logo" aria-label="Univesp por Estudantes" data-md-component="logo">
+    <a href="../.." title="Univesp por Estudantes - Portal Docker" class="md-nav__button md-logo" aria-label="Univesp por Estudantes - Portal Docker" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    Univesp por Estudantes
+    Univesp por Estudantes - Portal Docker
   </label>
   
     <div class="md-nav__source">
       <a href="https://github.com/Univesp-Computacao/o_mundo_dos_conteineres" title="Ir para repositório" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     Univesp-Computacao/o_mundo_dos_conteineres
@@ -325,7 +343,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -696,7 +714,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -906,10 +924,12 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
+
 
 
 <h1 id="servico">Serviço<a class="headerlink" href="#servico" title="Permanent link">&para;</a></h1>
@@ -922,7 +942,7 @@
 <p><img alt="porta" loading="lazy" src="https://i.postimg.cc/FFSX4Sth/image.png" /></p>
 <p>Ele vai abrir uma nova aba com a aplicação.</p>
 <p>Se lembra de como funciona o swarm? Então, escolha outro nó trabalhador e execute o <strong>docker ps</strong>, faça o mesmo para o nó gerente e em ambos vamos ter esse resultado:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>CONTAINER<span class="w"> </span>ID<span class="w">   </span>IMAGE<span class="w">     </span>COMMAND<span class="w">   </span>CREATED<span class="w">   </span>STATUS<span class="w">    </span>PORTS<span class="w">     </span>NAMES
 </code></pre></div>
 <p>Estranho né, se o swarm cria essa conexão com todos, porque o contêiner que subimos não foi refletido nos demais?</p>
 <blockquote>
@@ -930,20 +950,20 @@
 </blockquote>
 <p>Certo, o modo swarm precisa de um comando mais específico para roda a imagem que é o <a href="https://docs.docker.com/engine/reference/commandline/service_create/" target="_blank">docker service create</a>.</p>
 <p>Antes de executar, vamos remover a imagem local, vá ao terminal do nó que a imagem está rodando:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker rm 56e3abd7f344 --force
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>rm<span class="w"> </span>56e3abd7f344<span class="w"> </span>--force
 </code></pre></div>
 <p>E agora sim, vamos criar nosso serviço:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Execute</label><label for="__tabbed_1_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker service create -p <span class="m">5000</span>:5000 sposigor/app-flask-teste:1
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>service<span class="w"> </span>create<span class="w"> </span>-p<span class="w"> </span><span class="m">5000</span>:5000<span class="w"> </span>sposigor/app-flask-teste:1
 </code></pre></div>
 <ul>
 <li>A diferença é somente o comando inicial, <strong>service create</strong>, que vai permitir que todos os nós se comuniquem no modo swarm.</li>
 </ul>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Error response from daemon: This node is not a swarm manager. Worker nodes can<span class="err">&#39;</span>t be used to view or modify cluster state. Please run this <span class="nb">command</span> on a manager node or promote the current node to a manager.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Error<span class="w"> </span>response<span class="w"> </span>from<span class="w"> </span>daemon:<span class="w"> </span>This<span class="w"> </span>node<span class="w"> </span>is<span class="w"> </span>not<span class="w"> </span>a<span class="w"> </span>swarm<span class="w"> </span>manager.<span class="w"> </span>Worker<span class="w"> </span>nodes<span class="w"> </span>can<span class="err">&#39;</span>t<span class="w"> </span>be<span class="w"> </span>used<span class="w"> </span>to<span class="w"> </span>view<span class="w"> </span>or<span class="w"> </span>modify<span class="w"> </span>cluster<span class="w"> </span>state.<span class="w"> </span>Please<span class="w"> </span>run<span class="w"> </span>this<span class="w"> </span><span class="nb">command</span><span class="w"> </span>on<span class="w"> </span>a<span class="w"> </span>manager<span class="w"> </span>node<span class="w"> </span>or<span class="w"> </span>promote<span class="w"> </span>the<span class="w"> </span>current<span class="w"> </span>node<span class="w"> </span>to<span class="w"> </span>a<span class="w"> </span>manager.
 </code></pre></div>
 </div>
 </div>
@@ -954,14 +974,14 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Execute</label><label for="__tabbed_2_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker service create -p <span class="m">5000</span>:5000 sposigor/app-flask-teste:1
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>service<span class="w"> </span>create<span class="w"> </span>-p<span class="w"> </span><span class="m">5000</span>:5000<span class="w"> </span>sposigor/app-flask-teste:1
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>9q3asggjagwfw89vrojc1urew
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>overall progress: <span class="m">1</span> out of <span class="m">1</span> tasks
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="m">1</span>/1: running   <span class="o">[==================================================</span>&gt;<span class="o">]</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>verify: Service converged
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>overall<span class="w"> </span>progress:<span class="w"> </span><span class="m">1</span><span class="w"> </span>out<span class="w"> </span>of<span class="w"> </span><span class="m">1</span><span class="w"> </span>tasks
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="m">1</span>/1:<span class="w"> </span>running<span class="w">   </span><span class="o">[==================================================</span>&gt;<span class="o">]</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>verify:<span class="w"> </span>Service<span class="w"> </span>converged
 </code></pre></div>
 </div>
 </div>
@@ -972,15 +992,15 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Execute</label><label for="__tabbed_3_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker service ls
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker<span class="w"> </span>service<span class="w"> </span>ls
 </code></pre></div>
 <ul>
 <li>Lembrando só o nó gerente pode executar</li>
 </ul>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>ID             NAME           MODE         REPLICAS   IMAGE                        PORTS
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>9q3asggjagwf   epic_almeida   replicated   <span class="m">1</span>/1        sposigor/app-flask-teste:1   *:5000-&gt;5000/tcp
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>ID<span class="w">             </span>NAME<span class="w">           </span>MODE<span class="w">         </span>REPLICAS<span class="w">   </span>IMAGE<span class="w">                        </span>PORTS
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>9q3asggjagwf<span class="w">   </span>epic_almeida<span class="w">   </span>replicated<span class="w">   </span><span class="m">1</span>/1<span class="w">        </span>sposigor/app-flask-teste:1<span class="w">   </span>*:5000-&gt;5000/tcp
 </code></pre></div>
 </div>
 </div>
@@ -999,7 +1019,7 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Execute</label><label for="__tabbed_4_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>docker service ps 9q3asggjagwf
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>docker<span class="w"> </span>service<span class="w"> </span>ps<span class="w"> </span>9q3asggjagwf
 </code></pre></div>
 <ul>
 <li>Lembrando só o nó gerente pode executar</li>
@@ -1007,8 +1027,8 @@
 </ul>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>ID             NAME             IMAGE                        NODE      DESIRED STATE   CURRENT STATE            ERROR     PORTS
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>3qpfhbbmigm4   epic_almeida.1   sposigor/app-flask-teste:1   node2     Running         Running <span class="m">28</span> minutes ago      
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>ID<span class="w">             </span>NAME<span class="w">             </span>IMAGE<span class="w">                        </span>NODE<span class="w">      </span>DESIRED<span class="w"> </span>STATE<span class="w">   </span>CURRENT<span class="w"> </span>STATE<span class="w">            </span>ERROR<span class="w">     </span>PORTS
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>3qpfhbbmigm4<span class="w">   </span>epic_almeida.1<span class="w">   </span>sposigor/app-flask-teste:1<span class="w">   </span>node2<span class="w">     </span>Running<span class="w">         </span>Running<span class="w"> </span><span class="m">28</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w">      </span>
 </code></pre></div>
 </div>
 </div>
@@ -1036,12 +1056,12 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Execute</label><label for="__tabbed_5_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>docker service create -p <span class="m">5000</span>:5000 sposigor/app-flask-teste:1
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>docker<span class="w"> </span>service<span class="w"> </span>create<span class="w"> </span>-p<span class="w"> </span><span class="m">5000</span>:5000<span class="w"> </span>sposigor/app-flask-teste:1
 </code></pre></div>
 <p>Lembrando só o nó gerente pode executar</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Error response from daemon: rpc error: <span class="nv">code</span> <span class="o">=</span> InvalidArgument <span class="nv">desc</span> <span class="o">=</span> port <span class="s1">&#39;5000&#39;</span> is already <span class="k">in</span> use by service <span class="s1">&#39;epic_almeida&#39;</span> <span class="o">(</span>9q3asggjagwfw89vrojc1urew<span class="o">)</span> as an ingress port
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Error<span class="w"> </span>response<span class="w"> </span>from<span class="w"> </span>daemon:<span class="w"> </span>rpc<span class="w"> </span>error:<span class="w"> </span><span class="nv">code</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>InvalidArgument<span class="w"> </span><span class="nv">desc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>port<span class="w"> </span><span class="s1">&#39;5000&#39;</span><span class="w"> </span>is<span class="w"> </span>already<span class="w"> </span><span class="k">in</span><span class="w"> </span>use<span class="w"> </span>by<span class="w"> </span>service<span class="w"> </span><span class="s1">&#39;epic_almeida&#39;</span><span class="w"> </span><span class="o">(</span>9q3asggjagwfw89vrojc1urew<span class="o">)</span><span class="w"> </span>as<span class="w"> </span>an<span class="w"> </span>ingress<span class="w"> </span>port
 </code></pre></div>
 </div>
 </div>
@@ -1051,7 +1071,7 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Execute</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>docker rm 6f21 --force
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>docker<span class="w"> </span>rm<span class="w"> </span>6f21<span class="w"> </span>--force
 </code></pre></div>
 </div>
 </div>
@@ -1061,13 +1081,13 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">Execute</label><label for="__tabbed_7_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>docker service ls
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>docker<span class="w"> </span>service<span class="w"> </span>ls
 </code></pre></div>
 <p>Lembrando só o nó gerente pode executar</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>ID             NAME           MODE         REPLICAS   IMAGE                        PORTS
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>9q3asggjagwf   epic_almeida   replicated   <span class="m">1</span>/1        sposigor/app-flask-teste:1   *:5000-&gt;5000/tcp
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>ID<span class="w">             </span>NAME<span class="w">           </span>MODE<span class="w">         </span>REPLICAS<span class="w">   </span>IMAGE<span class="w">                        </span>PORTS
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>9q3asggjagwf<span class="w">   </span>epic_almeida<span class="w">   </span>replicated<span class="w">   </span><span class="m">1</span>/1<span class="w">        </span>sposigor/app-flask-teste:1<span class="w">   </span>*:5000-&gt;5000/tcp
 </code></pre></div>
 </div>
 </div>
@@ -1077,14 +1097,14 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">Execute</label><label for="__tabbed_8_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>docker service ps 9q3asggjagwf
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>docker<span class="w"> </span>service<span class="w"> </span>ps<span class="w"> </span>9q3asggjagwf
 </code></pre></div>
 <p>Lembrando só o nó gerente pode executar</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>ID             NAME                 IMAGE                        NODE      DESIRED STATE   CURRENT STATE           ERROR                         PORTS
-<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>f91ba1oajs39   epic_almeida.1       sposigor/app-flask-teste:1   node3     Running         Running <span class="m">2</span> minutes ago                                 
-<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>3qpfhbbmigm4    <span class="se">\_</span> epic_almeida.1   sposigor/app-flask-teste:1   node2     Shutdown        Failed <span class="m">3</span> minutes ago    <span class="s2">&quot;task: non-zero exit (137)&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>ID<span class="w">             </span>NAME<span class="w">                 </span>IMAGE<span class="w">                        </span>NODE<span class="w">      </span>DESIRED<span class="w"> </span>STATE<span class="w">   </span>CURRENT<span class="w"> </span>STATE<span class="w">           </span>ERROR<span class="w">                         </span>PORTS
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>f91ba1oajs39<span class="w">   </span>epic_almeida.1<span class="w">       </span>sposigor/app-flask-teste:1<span class="w">   </span>node3<span class="w">     </span>Running<span class="w">         </span>Running<span class="w"> </span><span class="m">2</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w">                                 </span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>3qpfhbbmigm4<span class="w">    </span><span class="se">\_</span><span class="w"> </span>epic_almeida.1<span class="w">   </span>sposigor/app-flask-teste:1<span class="w">   </span>node2<span class="w">     </span>Shutdown<span class="w">        </span>Failed<span class="w"> </span><span class="m">3</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w">    </span><span class="s2">&quot;task: non-zero exit (137)&quot;</span>
 </code></pre></div>
 </div>
 </div>
@@ -1114,14 +1134,14 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">Execute</label><label for="__tabbed_9_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>docker swarm join-token manager
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>docker<span class="w"> </span>swarm<span class="w"> </span>join-token<span class="w"> </span>manager
 </code></pre></div>
 <p>Lembrando só o nó gerente pode executar</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>To add a manager to this swarm, run the following command:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>To<span class="w"> </span>add<span class="w"> </span>a<span class="w"> </span>manager<span class="w"> </span>to<span class="w"> </span>this<span class="w"> </span>swarm,<span class="w"> </span>run<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>command:
 <a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
-<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>    docker swarm join --token SWMTKN-1-1waduqjabmpmygpy6xicwtt1srwbchelwnu8fsv3fj8qk4jdvi-8tke9gy4e6crw0euq2tki1m0y <span class="m">192</span>.168.0.13:2377
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">    </span>docker<span class="w"> </span>swarm<span class="w"> </span>join<span class="w"> </span>--token<span class="w"> </span>SWMTKN-1-1waduqjabmpmygpy6xicwtt1srwbchelwnu8fsv3fj8qk4jdvi-8tke9gy4e6crw0euq2tki1m0y<span class="w"> </span><span class="m">192</span>.168.0.13:2377
 </code></pre></div>
 </div>
 </div>
@@ -1131,12 +1151,12 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">Execute</label><label for="__tabbed_10_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>docker swarm join --token SWMTKN-1-1waduqjabmpmygpy6xicwtt1srwbchelwnu8fsv3fj8qk4jdvi-8tke9gy4e6crw0euq2tki1m0y <span class="m">192</span>.168.0.13:2377
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>docker<span class="w"> </span>swarm<span class="w"> </span>join<span class="w"> </span>--token<span class="w"> </span>SWMTKN-1-1waduqjabmpmygpy6xicwtt1srwbchelwnu8fsv3fj8qk4jdvi-8tke9gy4e6crw0euq2tki1m0y<span class="w"> </span><span class="m">192</span>.168.0.13:2377
 </code></pre></div>
 <p>Lembrando só o nó gerente pode executar</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>This node joined a swarm as a manager.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>This<span class="w"> </span>node<span class="w"> </span>joined<span class="w"> </span>a<span class="w"> </span>swarm<span class="w"> </span>as<span class="w"> </span>a<span class="w"> </span>manager.
 </code></pre></div>
 </div>
 </div>
@@ -1147,17 +1167,17 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="11:2"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">Execute</label><label for="__tabbed_11_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>docker node ls
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>docker<span class="w"> </span>node<span class="w"> </span>ls
 </code></pre></div>
 <p>Lembrando só o nó gerente pode executar</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>ID                            HOSTNAME   STATUS    AVAILABILITY   MANAGER STATUS   ENGINE VERSION
-<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>fhiexwgtupwto0yzz5i4nbve7     node1      Ready     Active         Leader           <span class="m">20</span>.10.0
-<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>x3ghs9kh5nftbnnd7otoyg4hu     node2      Ready     Active                          <span class="m">20</span>.10.0
-<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>nufnx3dlv0orjgb0dm5li4aah     node3      Ready     Active                          <span class="m">20</span>.10.0
-<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>jvxn6dt0zob66po3d5rdrbaru     node4      Ready     Active                          <span class="m">20</span>.10.0
-<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>1bk98ofc3qasq9n6v298x4jjv *   node5      Ready     Active         Reachable        <span class="m">20</span>.10.0
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>ID<span class="w">                            </span>HOSTNAME<span class="w">   </span>STATUS<span class="w">    </span>AVAILABILITY<span class="w">   </span>MANAGER<span class="w"> </span>STATUS<span class="w">   </span>ENGINE<span class="w"> </span>VERSION
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>fhiexwgtupwto0yzz5i4nbve7<span class="w">     </span>node1<span class="w">      </span>Ready<span class="w">     </span>Active<span class="w">         </span>Leader<span class="w">           </span><span class="m">20</span>.10.0
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>x3ghs9kh5nftbnnd7otoyg4hu<span class="w">     </span>node2<span class="w">      </span>Ready<span class="w">     </span>Active<span class="w">                          </span><span class="m">20</span>.10.0
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>nufnx3dlv0orjgb0dm5li4aah<span class="w">     </span>node3<span class="w">      </span>Ready<span class="w">     </span>Active<span class="w">                          </span><span class="m">20</span>.10.0
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>jvxn6dt0zob66po3d5rdrbaru<span class="w">     </span>node4<span class="w">      </span>Ready<span class="w">     </span>Active<span class="w">                          </span><span class="m">20</span>.10.0
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>1bk98ofc3qasq9n6v298x4jjv<span class="w"> </span>*<span class="w">   </span>node5<span class="w">      </span>Ready<span class="w">     </span>Active<span class="w">         </span>Reachable<span class="w">        </span><span class="m">20</span>.10.0
 </code></pre></div>
 </div>
 </div>
@@ -1172,17 +1192,17 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">Execute</label><label for="__tabbed_12_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>docker node ls
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>docker<span class="w"> </span>node<span class="w"> </span>ls
 </code></pre></div>
 <p>Lembrando só o nó gerente pode executar</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>ID                            HOSTNAME   STATUS    AVAILABILITY   MANAGER STATUS   ENGINE VERSION
-<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>3g4vyx694h4pd3dxlj442x88z     manager1   Ready     Active         Reachable        <span class="m">20</span>.10.0
-<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>lheo3at6gjkka6uoehk3lr0ow *   manager2   Ready     Active         Leader           <span class="m">20</span>.10.0
-<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>ptvwj6n2ums5o8b0lsfabhxgk     manager3   Ready     Active         Reachable        <span class="m">20</span>.10.0
-<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>n2230i73ivqhyqqg0ty2hw3nd     worker1    Ready     Active                          <span class="m">20</span>.10.0
-<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>tdiufxyidqv47atj937ffthb1     worker2    Ready     Active                          <span class="m">20</span>.10.0
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>ID<span class="w">                            </span>HOSTNAME<span class="w">   </span>STATUS<span class="w">    </span>AVAILABILITY<span class="w">   </span>MANAGER<span class="w"> </span>STATUS<span class="w">   </span>ENGINE<span class="w"> </span>VERSION
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>3g4vyx694h4pd3dxlj442x88z<span class="w">     </span>manager1<span class="w">   </span>Ready<span class="w">     </span>Active<span class="w">         </span>Reachable<span class="w">        </span><span class="m">20</span>.10.0
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>lheo3at6gjkka6uoehk3lr0ow<span class="w"> </span>*<span class="w">   </span>manager2<span class="w">   </span>Ready<span class="w">     </span>Active<span class="w">         </span>Leader<span class="w">           </span><span class="m">20</span>.10.0
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>ptvwj6n2ums5o8b0lsfabhxgk<span class="w">     </span>manager3<span class="w">   </span>Ready<span class="w">     </span>Active<span class="w">         </span>Reachable<span class="w">        </span><span class="m">20</span>.10.0
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>n2230i73ivqhyqqg0ty2hw3nd<span class="w">     </span>worker1<span class="w">    </span>Ready<span class="w">     </span>Active<span class="w">                          </span><span class="m">20</span>.10.0
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>tdiufxyidqv47atj937ffthb1<span class="w">     </span>worker2<span class="w">    </span>Ready<span class="w">     </span>Active<span class="w">                          </span><span class="m">20</span>.10.0
 </code></pre></div>
 </div>
 </div>
@@ -1193,17 +1213,17 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="13:2"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><input id="__tabbed_13_2" name="__tabbed_13" type="radio" /><div class="tabbed-labels"><label for="__tabbed_13_1">Execute</label><label for="__tabbed_13_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>docker node ls
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>docker<span class="w"> </span>node<span class="w"> </span>ls
 </code></pre></div>
 <p>Lembrando só o nó gerente pode executar</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>ID                            HOSTNAME   STATUS    AVAILABILITY   MANAGER STATUS   ENGINE VERSION
-<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>3g4vyx694h4pd3dxlj442x88z *   manager1   Ready     Active         Leader           <span class="m">20</span>.10.0
-<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>lheo3at6gjkka6uoehk3lr0ow     manager2   Unknown   Active         Unreachable      <span class="m">20</span>.10.0
-<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>ptvwj6n2ums5o8b0lsfabhxgk     manager3   Ready     Active         Reachable        <span class="m">20</span>.10.0
-<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>n2230i73ivqhyqqg0ty2hw3nd     worker1    Ready     Active                          <span class="m">20</span>.10.0
-<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>tdiufxyidqv47atj937ffthb1     worker2    Ready     Active                          <span class="m">20</span>.10.0
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>ID<span class="w">                            </span>HOSTNAME<span class="w">   </span>STATUS<span class="w">    </span>AVAILABILITY<span class="w">   </span>MANAGER<span class="w"> </span>STATUS<span class="w">   </span>ENGINE<span class="w"> </span>VERSION
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>3g4vyx694h4pd3dxlj442x88z<span class="w"> </span>*<span class="w">   </span>manager1<span class="w">   </span>Ready<span class="w">     </span>Active<span class="w">         </span>Leader<span class="w">           </span><span class="m">20</span>.10.0
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>lheo3at6gjkka6uoehk3lr0ow<span class="w">     </span>manager2<span class="w">   </span>Unknown<span class="w">   </span>Active<span class="w">         </span>Unreachable<span class="w">      </span><span class="m">20</span>.10.0
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>ptvwj6n2ums5o8b0lsfabhxgk<span class="w">     </span>manager3<span class="w">   </span>Ready<span class="w">     </span>Active<span class="w">         </span>Reachable<span class="w">        </span><span class="m">20</span>.10.0
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>n2230i73ivqhyqqg0ty2hw3nd<span class="w">     </span>worker1<span class="w">    </span>Ready<span class="w">     </span>Active<span class="w">                          </span><span class="m">20</span>.10.0
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>tdiufxyidqv47atj937ffthb1<span class="w">     </span>worker2<span class="w">    </span>Ready<span class="w">     </span>Active<span class="w">                          </span><span class="m">20</span>.10.0
 </code></pre></div>
 </div>
 </div>
@@ -1218,12 +1238,12 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="14:2"><input checked="checked" id="__tabbed_14_1" name="__tabbed_14" type="radio" /><input id="__tabbed_14_2" name="__tabbed_14" type="radio" /><div class="tabbed-labels"><label for="__tabbed_14_1">Execute</label><label for="__tabbed_14_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>docker node rm manager2
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>docker<span class="w"> </span>node<span class="w"> </span>rm<span class="w"> </span>manager2
 </code></pre></div>
 <p>Lembrando só o nó gerente pode executar</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>Error response from daemon: rpc error: <span class="nv">code</span> <span class="o">=</span> FailedPrecondition <span class="nv">desc</span> <span class="o">=</span> node lheo3at6gjkka6uoehk3lr0ow is a cluster manager and is a member of the raft cluster. It must be demoted to worker before removal
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>Error<span class="w"> </span>response<span class="w"> </span>from<span class="w"> </span>daemon:<span class="w"> </span>rpc<span class="w"> </span>error:<span class="w"> </span><span class="nv">code</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>FailedPrecondition<span class="w"> </span><span class="nv">desc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>node<span class="w"> </span>lheo3at6gjkka6uoehk3lr0ow<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>cluster<span class="w"> </span>manager<span class="w"> </span>and<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>member<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>raft<span class="w"> </span>cluster.<span class="w"> </span>It<span class="w"> </span>must<span class="w"> </span>be<span class="w"> </span>demoted<span class="w"> </span>to<span class="w"> </span>worker<span class="w"> </span>before<span class="w"> </span>removal
 </code></pre></div>
 </div>
 </div>
@@ -1233,12 +1253,12 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="15:2"><input checked="checked" id="__tabbed_15_1" name="__tabbed_15" type="radio" /><input id="__tabbed_15_2" name="__tabbed_15" type="radio" /><div class="tabbed-labels"><label for="__tabbed_15_1">Execute</label><label for="__tabbed_15_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>docker node demote manager2
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>docker<span class="w"> </span>node<span class="w"> </span>demote<span class="w"> </span>manager2
 </code></pre></div>
 <p>Lembrando só o nó gerente pode executar</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>Manager manager2 demoted <span class="k">in</span> the swarm.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>Manager<span class="w"> </span>manager2<span class="w"> </span>demoted<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>swarm.
 </code></pre></div>
 </div>
 </div>
@@ -1252,20 +1272,20 @@
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Suba a imagem</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>docker service create -p <span class="m">5000</span>:5000 sposigor/app-flask-teste:1
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>docker<span class="w"> </span>service<span class="w"> </span>create<span class="w"> </span>-p<span class="w"> </span><span class="m">5000</span>:5000<span class="w"> </span>sposigor/app-flask-teste:1
 </code></pre></div>
 <p>Lembrando só o nó gerente pode executar</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>docker node ls
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>docker<span class="w"> </span>node<span class="w"> </span>ls
 </code></pre></div>
 <p>E a saída:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>ID                            HOSTNAME   STATUS    AVAILABILITY   MANAGER STATUS   ENGINE VERSION
-<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>3g4vyx694h4pd3dxlj442x88z     manager1   Ready     Active         Leader           <span class="m">20</span>.10.0
-<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>3xtgnz4d2098nnhjrq5ilv7l6 *   manager2   Ready     Active         Reachable        <span class="m">20</span>.10.0
-<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>ptvwj6n2ums5o8b0lsfabhxgk     manager3   Ready     Active         Reachable        <span class="m">20</span>.10.0
-<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>n2230i73ivqhyqqg0ty2hw3nd     worker1    Ready     Active                          <span class="m">20</span>.10.0
-<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a>tdiufxyidqv47atj937ffthb1     worker2    Ready     Active                          <span class="m">20</span>.10.0
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>ID<span class="w">                            </span>HOSTNAME<span class="w">   </span>STATUS<span class="w">    </span>AVAILABILITY<span class="w">   </span>MANAGER<span class="w"> </span>STATUS<span class="w">   </span>ENGINE<span class="w"> </span>VERSION
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>3g4vyx694h4pd3dxlj442x88z<span class="w">     </span>manager1<span class="w">   </span>Ready<span class="w">     </span>Active<span class="w">         </span>Leader<span class="w">           </span><span class="m">20</span>.10.0
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>3xtgnz4d2098nnhjrq5ilv7l6<span class="w"> </span>*<span class="w">   </span>manager2<span class="w">   </span>Ready<span class="w">     </span>Active<span class="w">         </span>Reachable<span class="w">        </span><span class="m">20</span>.10.0
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>ptvwj6n2ums5o8b0lsfabhxgk<span class="w">     </span>manager3<span class="w">   </span>Ready<span class="w">     </span>Active<span class="w">         </span>Reachable<span class="w">        </span><span class="m">20</span>.10.0
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>n2230i73ivqhyqqg0ty2hw3nd<span class="w">     </span>worker1<span class="w">    </span>Ready<span class="w">     </span>Active<span class="w">                          </span><span class="m">20</span>.10.0
+<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a>tdiufxyidqv47atj937ffthb1<span class="w">     </span>worker2<span class="w">    </span>Ready<span class="w">     </span>Active<span class="w">                          </span><span class="m">20</span>.10.0
 </code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -1275,20 +1295,20 @@ Para alterar vamos usar o <a href="https://docs.docker.com/engine/reference/comm
 Vamos passa a flag <strong>--availability</strong> que tem 3 estados ("active"|"pause"|"drain").
 No nosso caso queremos usar o <strong>drain</strong> para que o gerente não execute nenhum serviço.
 Por fim basta passa qual maquina você quer alterar o estado.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>docker node update --availability drain manager2
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>docker<span class="w"> </span>node<span class="w"> </span>update<span class="w"> </span>--availability<span class="w"> </span>drain<span class="w"> </span>manager2
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <p>Rode novamente o <strong>docker node ls</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>docker node ls
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>docker<span class="w"> </span>node<span class="w"> </span>ls
 </code></pre></div>
 <p>Saida:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>ID                            HOSTNAME   STATUS    AVAILABILITY   MANAGER STATUS   ENGINE VERSION
-<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>3g4vyx694h4pd3dxlj442x88z     manager1   Ready     Active         Leader           <span class="m">20</span>.10.0
-<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>3xtgnz4d2098nnhjrq5ilv7l6 *   manager2   Ready     Drain          Reachable        <span class="m">20</span>.10.0
-<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>ptvwj6n2ums5o8b0lsfabhxgk     manager3   Ready     Active         Reachable        <span class="m">20</span>.10.0
-<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>n2230i73ivqhyqqg0ty2hw3nd     worker1    Ready     Active                          <span class="m">20</span>.10.0
-<a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a>tdiufxyidqv47atj937ffthb1     worker2    Ready     Active                          <span class="m">20</span>.10.0
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>ID<span class="w">                            </span>HOSTNAME<span class="w">   </span>STATUS<span class="w">    </span>AVAILABILITY<span class="w">   </span>MANAGER<span class="w"> </span>STATUS<span class="w">   </span>ENGINE<span class="w"> </span>VERSION
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>3g4vyx694h4pd3dxlj442x88z<span class="w">     </span>manager1<span class="w">   </span>Ready<span class="w">     </span>Active<span class="w">         </span>Leader<span class="w">           </span><span class="m">20</span>.10.0
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>3xtgnz4d2098nnhjrq5ilv7l6<span class="w"> </span>*<span class="w">   </span>manager2<span class="w">   </span>Ready<span class="w">     </span>Drain<span class="w">          </span>Reachable<span class="w">        </span><span class="m">20</span>.10.0
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>ptvwj6n2ums5o8b0lsfabhxgk<span class="w">     </span>manager3<span class="w">   </span>Ready<span class="w">     </span>Active<span class="w">         </span>Reachable<span class="w">        </span><span class="m">20</span>.10.0
+<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>n2230i73ivqhyqqg0ty2hw3nd<span class="w">     </span>worker1<span class="w">    </span>Ready<span class="w">     </span>Active<span class="w">                          </span><span class="m">20</span>.10.0
+<a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a>tdiufxyidqv47atj937ffthb1<span class="w">     </span>worker2<span class="w">    </span>Ready<span class="w">     </span>Active<span class="w">                          </span><span class="m">20</span>.10.0
 </code></pre></div>
 </div>
 </div>
@@ -1302,14 +1322,14 @@ Por fim basta passa qual maquina você quer alterar o estado.</p>
 <p>Vamos passa para o comando a flag <strong>--constraint-add</strong>
 Nesse caso queremos especificar um tipo de nó, então vamos usar o <strong>node.role==worker</strong>
 E por ultimo vamos passa o ID do serviço para saber qual serviço vamos aplicar essa restrição</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>docker service update --constraint-add node.role<span class="o">==</span>worker gnj34gs43ebi
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>docker<span class="w"> </span>service<span class="w"> </span>update<span class="w"> </span>--constraint-add<span class="w"> </span>node.role<span class="o">==</span>worker<span class="w"> </span>gnj34gs43ebi
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>gnj34gs43ebi
-<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>overall progress: <span class="m">1</span> out of <span class="m">1</span> tasks
-<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="m">1</span>/1: running   <span class="o">[==================================================</span>&gt;<span class="o">]</span>
-<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a>verify: Service converged
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>overall<span class="w"> </span>progress:<span class="w"> </span><span class="m">1</span><span class="w"> </span>out<span class="w"> </span>of<span class="w"> </span><span class="m">1</span><span class="w"> </span>tasks
+<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="m">1</span>/1:<span class="w"> </span>running<span class="w">   </span><span class="o">[==================================================</span>&gt;<span class="o">]</span>
+<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a>verify:<span class="w"> </span>Service<span class="w"> </span>converged
 </code></pre></div>
 </div>
 </div>
@@ -1326,13 +1346,13 @@ E por ultimo vamos passa o ID do serviço para saber qual serviço vamos aplicar
 <div class="tabbed-set tabbed-alternate" data-tabs="18:2"><input checked="checked" id="__tabbed_18_1" name="__tabbed_18" type="radio" /><input id="__tabbed_18_2" name="__tabbed_18" type="radio" /><div class="tabbed-labels"><label for="__tabbed_18_1">Execute</label><label for="__tabbed_18_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>docker service ls
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>docker<span class="w"> </span>service<span class="w"> </span>ls
 </code></pre></div>
 <p>Lembrando só o nó gerente pode executar</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>ID             NAME              MODE         REPLICAS   IMAGE                        PORTS
-<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>gnj34gs43ebi   dazzling_lamarr   replicated   <span class="m">1</span>/1        sposigor/app-flask-teste:1   *:5000-&gt;5000/tcp
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>ID<span class="w">             </span>NAME<span class="w">              </span>MODE<span class="w">         </span>REPLICAS<span class="w">   </span>IMAGE<span class="w">                        </span>PORTS
+<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>gnj34gs43ebi<span class="w">   </span>dazzling_lamarr<span class="w">   </span>replicated<span class="w">   </span><span class="m">1</span>/1<span class="w">        </span>sposigor/app-flask-teste:1<span class="w">   </span>*:5000-&gt;5000/tcp
 </code></pre></div>
 </div>
 </div>
@@ -1342,13 +1362,13 @@ E por ultimo vamos passa o ID do serviço para saber qual serviço vamos aplicar
 <div class="tabbed-set tabbed-alternate" data-tabs="19:2"><input checked="checked" id="__tabbed_19_1" name="__tabbed_19" type="radio" /><input id="__tabbed_19_2" name="__tabbed_19" type="radio" /><div class="tabbed-labels"><label for="__tabbed_19_1">Execute</label><label for="__tabbed_19_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>docker service ps gnj34gs43ebi
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>docker<span class="w"> </span>service<span class="w"> </span>ps<span class="w"> </span>gnj34gs43ebi
 </code></pre></div>
 <p>Lembrando só o nó gerente pode executar</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>ID             NAME                IMAGE                        NODE      DESIRED STATE   CURRENT STATE            ERROR     PORTS
-<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>w105x64ylhne   dazzling_lamarr.1   sposigor/app-flask-teste:1   worker2   Running         Running <span class="m">37</span> minutes ago      
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>ID<span class="w">             </span>NAME<span class="w">                </span>IMAGE<span class="w">                        </span>NODE<span class="w">      </span>DESIRED<span class="w"> </span>STATE<span class="w">   </span>CURRENT<span class="w"> </span>STATE<span class="w">            </span>ERROR<span class="w">     </span>PORTS
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>w105x64ylhne<span class="w">   </span>dazzling_lamarr.1<span class="w">   </span>sposigor/app-flask-teste:1<span class="w">   </span>worker2<span class="w">   </span>Running<span class="w">         </span>Running<span class="w"> </span><span class="m">37</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w">      </span>
 </code></pre></div>
 </div>
 </div>
@@ -1358,18 +1378,18 @@ E por ultimo vamos passa o ID do serviço para saber qual serviço vamos aplicar
 <div class="tabbed-set tabbed-alternate" data-tabs="20:2"><input checked="checked" id="__tabbed_20_1" name="__tabbed_20" type="radio" /><input id="__tabbed_20_2" name="__tabbed_20" type="radio" /><div class="tabbed-labels"><label for="__tabbed_20_1">Execute</label><label for="__tabbed_20_2">Saida</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>docker service update --replicas <span class="m">8</span> gnj34gs43ebi
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>docker<span class="w"> </span>service<span class="w"> </span>update<span class="w"> </span>--replicas<span class="w"> </span><span class="m">8</span><span class="w"> </span>gnj34gs43ebi
 </code></pre></div>
 <p>Lembrando só o nó gerente pode executar</p>
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>gnj34gs43ebi
-<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>overall progress: <span class="m">4</span> out of <span class="m">4</span> tasks
-<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a><span class="m">1</span>/4: running   <span class="o">[==================================================</span>&gt;<span class="o">]</span>
-<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a><span class="m">2</span>/4: running   <span class="o">[==================================================</span>&gt;<span class="o">]</span>
-<a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a><span class="m">3</span>/4: running   <span class="o">[==================================================</span>&gt;<span class="o">]</span>
-<a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a><span class="m">4</span>/4: running   <span class="o">[==================================================</span>&gt;<span class="o">]</span>
-<a id="__codelineno-44-7" name="__codelineno-44-7" href="#__codelineno-44-7"></a>verify: Service converged     
+<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>overall<span class="w"> </span>progress:<span class="w"> </span><span class="m">4</span><span class="w"> </span>out<span class="w"> </span>of<span class="w"> </span><span class="m">4</span><span class="w"> </span>tasks
+<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a><span class="m">1</span>/4:<span class="w"> </span>running<span class="w">   </span><span class="o">[==================================================</span>&gt;<span class="o">]</span>
+<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a><span class="m">2</span>/4:<span class="w"> </span>running<span class="w">   </span><span class="o">[==================================================</span>&gt;<span class="o">]</span>
+<a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a><span class="m">3</span>/4:<span class="w"> </span>running<span class="w">   </span><span class="o">[==================================================</span>&gt;<span class="o">]</span>
+<a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a><span class="m">4</span>/4:<span class="w"> </span>running<span class="w">   </span><span class="o">[==================================================</span>&gt;<span class="o">]</span>
+<a id="__codelineno-44-7" name="__codelineno-44-7" href="#__codelineno-44-7"></a>verify:<span class="w"> </span>Service<span class="w"> </span>converged<span class="w">     </span>
 </code></pre></div>
 </div>
 </div>
@@ -1379,25 +1399,25 @@ E por ultimo vamos passa o ID do serviço para saber qual serviço vamos aplicar
 <div class="tabbed-set tabbed-alternate" data-tabs="21:4"><input checked="checked" id="__tabbed_21_1" name="__tabbed_21" type="radio" /><input id="__tabbed_21_2" name="__tabbed_21" type="radio" /><input id="__tabbed_21_3" name="__tabbed_21" type="radio" /><input id="__tabbed_21_4" name="__tabbed_21" type="radio" /><div class="tabbed-labels"><label for="__tabbed_21_1">docker service ls</label><label for="__tabbed_21_2">docker service ps</label><label for="__tabbed_21_3">Removendo --constraint-rm</label><label for="__tabbed_21_4">8 Replicas</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>docker service ls
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>docker<span class="w"> </span>service<span class="w"> </span>ls
 </code></pre></div>
 <p>Lembrando só o nó gerente pode executar</p>
 <p>Saida:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>ID             NAME              MODE         REPLICAS   IMAGE                        PORTS
-<a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a>gnj34gs43ebi   dazzling_lamarr   replicated   <span class="m">4</span>/4        sposigor/app-flask-teste:1   *:5000-&gt;5000/tcp
+<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>ID<span class="w">             </span>NAME<span class="w">              </span>MODE<span class="w">         </span>REPLICAS<span class="w">   </span>IMAGE<span class="w">                        </span>PORTS
+<a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a>gnj34gs43ebi<span class="w">   </span>dazzling_lamarr<span class="w">   </span>replicated<span class="w">   </span><span class="m">4</span>/4<span class="w">        </span>sposigor/app-flask-teste:1<span class="w">   </span>*:5000-&gt;5000/tcp
 </code></pre></div>
 <p>Temos agora, 4 replicas</p>
 </div>
 <div class="tabbed-block">
 <p>Para saber quais maquinas estão rodando o serviço:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>docker service ps gnj34gs43ebi
+<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>docker<span class="w"> </span>service<span class="w"> </span>ps<span class="w"> </span>gnj34gs43ebi
 </code></pre></div>
 <p>Saida:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>ID             NAME                IMAGE                        NODE      DESIRED STATE   CURRENT STATE            ERROR     PORTS
-<a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a>w105x64ylhne   dazzling_lamarr.1   sposigor/app-flask-teste:1   worker2   Running         Running <span class="m">52</span> minutes ago             
-<a id="__codelineno-48-3" name="__codelineno-48-3" href="#__codelineno-48-3"></a>v9bmopdi3nr3   dazzling_lamarr.2   sposigor/app-flask-teste:1   worker1   Running         Running <span class="m">3</span> minutes ago              
-<a id="__codelineno-48-4" name="__codelineno-48-4" href="#__codelineno-48-4"></a>sp81t2z56n67   dazzling_lamarr.3   sposigor/app-flask-teste:1   worker1   Running         Running <span class="m">4</span> minutes ago              
-<a id="__codelineno-48-5" name="__codelineno-48-5" href="#__codelineno-48-5"></a>oxdvxulccegb   dazzling_lamarr.4   sposigor/app-flask-teste:1   worker2   Running         Running <span class="m">5</span> minutes ago   
+<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>ID<span class="w">             </span>NAME<span class="w">                </span>IMAGE<span class="w">                        </span>NODE<span class="w">      </span>DESIRED<span class="w"> </span>STATE<span class="w">   </span>CURRENT<span class="w"> </span>STATE<span class="w">            </span>ERROR<span class="w">     </span>PORTS
+<a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a>w105x64ylhne<span class="w">   </span>dazzling_lamarr.1<span class="w">   </span>sposigor/app-flask-teste:1<span class="w">   </span>worker2<span class="w">   </span>Running<span class="w">         </span>Running<span class="w"> </span><span class="m">52</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w">             </span>
+<a id="__codelineno-48-3" name="__codelineno-48-3" href="#__codelineno-48-3"></a>v9bmopdi3nr3<span class="w">   </span>dazzling_lamarr.2<span class="w">   </span>sposigor/app-flask-teste:1<span class="w">   </span>worker1<span class="w">   </span>Running<span class="w">         </span>Running<span class="w"> </span><span class="m">3</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w">              </span>
+<a id="__codelineno-48-4" name="__codelineno-48-4" href="#__codelineno-48-4"></a>sp81t2z56n67<span class="w">   </span>dazzling_lamarr.3<span class="w">   </span>sposigor/app-flask-teste:1<span class="w">   </span>worker1<span class="w">   </span>Running<span class="w">         </span>Running<span class="w"> </span><span class="m">4</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w">              </span>
+<a id="__codelineno-48-5" name="__codelineno-48-5" href="#__codelineno-48-5"></a>oxdvxulccegb<span class="w">   </span>dazzling_lamarr.4<span class="w">   </span>sposigor/app-flask-teste:1<span class="w">   </span>worker2<span class="w">   </span>Running<span class="w">         </span>Running<span class="w"> </span><span class="m">5</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w">   </span>
 </code></pre></div>
 <p>Lembrando que fizemo a restrição para somente workes executarem as tarefas.
 Vamos remover a restrição e tentar novamente com 8 replicas</p>
@@ -1406,28 +1426,28 @@ Vamos remover a restrição e tentar novamente com 8 replicas</p>
 <ul>
 <li>Vamos passar os mesmos parâmetros que usamos para restringir os serviços</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>docker service update --constraint-rm node.role<span class="o">==</span>worker gnj34gs43ebi
+<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>docker<span class="w"> </span>service<span class="w"> </span>update<span class="w"> </span>--constraint-rm<span class="w"> </span>node.role<span class="o">==</span>worker<span class="w"> </span>gnj34gs43ebi
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <ul>
 <li>Já vamos passar 8 no parâmetro.</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>docker service update --replicas <span class="m">8</span> gnj34gs43ebi
+<div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>docker<span class="w"> </span>service<span class="w"> </span>update<span class="w"> </span>--replicas<span class="w"> </span><span class="m">8</span><span class="w"> </span>gnj34gs43ebi
 </code></pre></div>
 <p>Em seguida:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>docker service ps gnj34gs43ebi
+<div class="highlight"><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>docker<span class="w"> </span>service<span class="w"> </span>ps<span class="w"> </span>gnj34gs43ebi
 </code></pre></div>
 <p>E a saída:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>ID             NAME                IMAGE                        NODE       DESIRED STATE   CURRENT STATE               ERROR     PORTS
-<a id="__codelineno-52-2" name="__codelineno-52-2" href="#__codelineno-52-2"></a>w105x64ylhne   dazzling_lamarr.1   sposigor/app-flask-teste:1   worker2    Running         Running about an hour ago             
-<a id="__codelineno-52-3" name="__codelineno-52-3" href="#__codelineno-52-3"></a>v9bmopdi3nr3   dazzling_lamarr.2   sposigor/app-flask-teste:1   worker1    Running         Running <span class="m">17</span> minutes ago                
-<a id="__codelineno-52-4" name="__codelineno-52-4" href="#__codelineno-52-4"></a>sp81t2z56n67   dazzling_lamarr.3   sposigor/app-flask-teste:1   worker1    Running         Running <span class="m">17</span> minutes ago                
-<a id="__codelineno-52-5" name="__codelineno-52-5" href="#__codelineno-52-5"></a>oxdvxulccegb   dazzling_lamarr.4   sposigor/app-flask-teste:1   worker2    Running         Running <span class="m">18</span> minutes ago                
-<a id="__codelineno-52-6" name="__codelineno-52-6" href="#__codelineno-52-6"></a>gs8m3brh4sw6   dazzling_lamarr.5   sposigor/app-flask-teste:1   manager3   Running         Running <span class="m">3</span> minutes ago                 
-<a id="__codelineno-52-7" name="__codelineno-52-7" href="#__codelineno-52-7"></a>sr1u0kr19hut   dazzling_lamarr.6   sposigor/app-flask-teste:1   manager3   Running         Running <span class="m">3</span> minutes ago                 
-<a id="__codelineno-52-8" name="__codelineno-52-8" href="#__codelineno-52-8"></a>z80bqt30sscq   dazzling_lamarr.7   sposigor/app-flask-teste:1   manager3   Running         Running <span class="m">3</span> minutes ago                 
-<a id="__codelineno-52-9" name="__codelineno-52-9" href="#__codelineno-52-9"></a>2yjmab0lkl7q   dazzling_lamarr.8   sposigor/app-flask-teste:1   manager1   Running         Running <span class="m">3</span> minutes ago    
+<div class="highlight"><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>ID<span class="w">             </span>NAME<span class="w">                </span>IMAGE<span class="w">                        </span>NODE<span class="w">       </span>DESIRED<span class="w"> </span>STATE<span class="w">   </span>CURRENT<span class="w"> </span>STATE<span class="w">               </span>ERROR<span class="w">     </span>PORTS
+<a id="__codelineno-52-2" name="__codelineno-52-2" href="#__codelineno-52-2"></a>w105x64ylhne<span class="w">   </span>dazzling_lamarr.1<span class="w">   </span>sposigor/app-flask-teste:1<span class="w">   </span>worker2<span class="w">    </span>Running<span class="w">         </span>Running<span class="w"> </span>about<span class="w"> </span>an<span class="w"> </span>hour<span class="w"> </span>ago<span class="w">             </span>
+<a id="__codelineno-52-3" name="__codelineno-52-3" href="#__codelineno-52-3"></a>v9bmopdi3nr3<span class="w">   </span>dazzling_lamarr.2<span class="w">   </span>sposigor/app-flask-teste:1<span class="w">   </span>worker1<span class="w">    </span>Running<span class="w">         </span>Running<span class="w"> </span><span class="m">17</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w">                </span>
+<a id="__codelineno-52-4" name="__codelineno-52-4" href="#__codelineno-52-4"></a>sp81t2z56n67<span class="w">   </span>dazzling_lamarr.3<span class="w">   </span>sposigor/app-flask-teste:1<span class="w">   </span>worker1<span class="w">    </span>Running<span class="w">         </span>Running<span class="w"> </span><span class="m">17</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w">                </span>
+<a id="__codelineno-52-5" name="__codelineno-52-5" href="#__codelineno-52-5"></a>oxdvxulccegb<span class="w">   </span>dazzling_lamarr.4<span class="w">   </span>sposigor/app-flask-teste:1<span class="w">   </span>worker2<span class="w">    </span>Running<span class="w">         </span>Running<span class="w"> </span><span class="m">18</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w">                </span>
+<a id="__codelineno-52-6" name="__codelineno-52-6" href="#__codelineno-52-6"></a>gs8m3brh4sw6<span class="w">   </span>dazzling_lamarr.5<span class="w">   </span>sposigor/app-flask-teste:1<span class="w">   </span>manager3<span class="w">   </span>Running<span class="w">         </span>Running<span class="w"> </span><span class="m">3</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w">                 </span>
+<a id="__codelineno-52-7" name="__codelineno-52-7" href="#__codelineno-52-7"></a>sr1u0kr19hut<span class="w">   </span>dazzling_lamarr.6<span class="w">   </span>sposigor/app-flask-teste:1<span class="w">   </span>manager3<span class="w">   </span>Running<span class="w">         </span>Running<span class="w"> </span><span class="m">3</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w">                 </span>
+<a id="__codelineno-52-8" name="__codelineno-52-8" href="#__codelineno-52-8"></a>z80bqt30sscq<span class="w">   </span>dazzling_lamarr.7<span class="w">   </span>sposigor/app-flask-teste:1<span class="w">   </span>manager3<span class="w">   </span>Running<span class="w">         </span>Running<span class="w"> </span><span class="m">3</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w">                 </span>
+<a id="__codelineno-52-9" name="__codelineno-52-9" href="#__codelineno-52-9"></a>2yjmab0lkl7q<span class="w">   </span>dazzling_lamarr.8<span class="w">   </span>sposigor/app-flask-teste:1<span class="w">   </span>manager1<span class="w">   </span>Running<span class="w">         </span>Running<span class="w"> </span><span class="m">3</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w">    </span>
 </code></pre></div>
 </div>
 </div>
@@ -1435,57 +1455,32 @@ Vamos remover a restrição e tentar novamente com 8 replicas</p>
 <hr />
 <p>Com isso agora temos diversas maquinas rodando nosso serviço, ou seja, o poder de processamento aumentou. Porque assim que ocorrer uma demanda de processamento, o load balancing por trás vai estar resolvendo isso.</p>
 <p>Também é possível usar o <a href="https://docs.docker.com/engine/reference/commandline/service_scale/" target="_blank">docker service scale</a>, vamos passar o ID do serviço e a quantidade de réplicas para escalar</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>docker service scale <span class="nv">gnj34gs43ebi</span><span class="o">=</span><span class="m">6</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>docker<span class="w"> </span>service<span class="w"> </span>scale<span class="w"> </span><span class="nv">gnj34gs43ebi</span><span class="o">=</span><span class="m">6</span>
 </code></pre></div>
 <hr />
 <p>Temos também a opção de passar diretamente na criação do serviço, basta passa a flag <strong>--mode</strong> e o parâmetro <strong>global</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>docker service create -p <span class="m">5000</span>:5000 --mode global sposigor/app-flask-teste:1
+<div class="highlight"><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>docker<span class="w"> </span>service<span class="w"> </span>create<span class="w"> </span>-p<span class="w"> </span><span class="m">5000</span>:5000<span class="w"> </span>--mode<span class="w"> </span>global<span class="w"> </span>sposigor/app-flask-teste:1
 </code></pre></div>
 <p>É importante lembrar que não é recomendado passar todos os serviços com o parâmetro global, afinal isso vai exigir um consumo que poderia ser poupado da aplicação no processador individual. Seja sempre critico com essa necessidade.</p>
 
-              
-            </article>
-          </div>
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Rodapé">
-      
-        
-        <a href="../iniciando%20o%20swarm/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Iniciando o Swarm" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Anterior
-              </span>
-              Iniciando o Swarm
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../ingress/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Ingress" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Próximo
-              </span>
-              Ingress
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1507,10 +1502,86 @@ Vamos remover a restrição e tentar novamente com 8 replicas</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.expand", "navigation.indexes", "navigation.sections", "navigation.tabs", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de Transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de Transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Buscar", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Perdido", "select.version.title": "Selecione a vers\u00e3o"}}</script>
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>Usamos cookies para reconhecer suas visitas repetidas e preferências. Com o seu consentimento, você está nos ajudando a
+ tornar nossa documentação melhor.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        <label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        <label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
     
     
-      <script src="../../assets/javascripts/bundle.6e54b5cd.min.js"></script>
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.expand", "navigation.indexes", "navigation.sections", "navigation.tabs", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de Transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de Transfer\u00eancia", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Perdido", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5cf534bf.min.js"></script>
       
     
   </body>
